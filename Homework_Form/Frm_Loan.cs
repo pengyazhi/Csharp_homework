@@ -1,0 +1,65 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+
+namespace Homework_Form
+{
+    public partial class Frm_Loan : Form
+    {
+        
+        public Frm_Loan()
+        {
+            InitializeComponent();
+           
+        }
+        public static decimal Loan; //貸款金額
+        public static int LoanYear;
+        public static int LoanYearRate;
+        public static int NumOfMonth; //還款月數
+        public static double MonthlyInterestRate;//月利率
+        public static decimal DownPayment;//頭期款
+        public static double MonthRate;//(1＋月利率)**月數 
+        public static double EachMonRate;//每月應付本息金額之平均攤還率
+        public static decimal PrincipalPlusInterest;//本金+利息
+        public static int Total;//總還款額
+        private void btnPMT_Click(object sender, EventArgs e)
+        {
+            Caculate();
+            MessageBox.Show($"每月應付本息為{Convert.ToInt32(PrincipalPlusInterest)}元。");
+        }
+        private void btnTotal_Click(object sender, EventArgs e)
+        {
+            Caculate();
+            MessageBox.Show($"總付額為{Total}元。");
+
+        }
+        public void Caculate()
+        {
+            Loan = Convert.ToInt32(txtLoan.Text); //貸款金額
+            LoanYear = Convert.ToInt32(txtYear.Text);//貸款年數
+            NumOfMonth = Convert.ToInt32(txtYear.Text) * 12; //還款月數 = 還款年*12
+            LoanYearRate = Convert.ToInt32(txtInterestRate.Text);
+            MonthlyInterestRate = Convert.ToDouble(txtInterestRate.Text) / 1200; //月利率=年利率/12
+            DownPayment = Convert.ToInt32(txtDdownPayment.Text); //頭期款
+            //每月應付本息金額之平均攤還率:{[(1＋月利率)^月數]×月利率}÷{[(1＋月利率)^月數]－1}
+            MonthRate = Math.Pow(1 + MonthlyInterestRate, NumOfMonth);//(1＋月利率)**月數 
+            EachMonRate = MonthRate * MonthlyInterestRate / (MonthRate - 1); //每月應付本息金額之平均攤還率
+            //平均每月應攤付本息金額＝貸款本金×每月應付本息金額之平均攤還率＝每月應還本金金額＋每 月應付利息金額
+            PrincipalPlusInterest = Convert.ToInt32((Loan - DownPayment)) * Convert.ToDecimal(EachMonRate);
+            Total = Convert.ToInt32(PrincipalPlusInterest) * NumOfMonth;
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            Frm_Loan_Report frm = new Frm_Loan_Report();
+            frm.Show();
+        }
+    }
+}
