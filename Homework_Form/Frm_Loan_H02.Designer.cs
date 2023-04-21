@@ -1,6 +1,6 @@
 ﻿namespace Homework_Form
 {
-    partial class Frm_Loan
+    partial class Frm_Loan_H02
     {
         /// <summary>
         /// Required designer variable.
@@ -92,7 +92,7 @@
             this.txtLoan.Name = "txtLoan";
             this.txtLoan.Size = new System.Drawing.Size(122, 35);
             this.txtLoan.TabIndex = 4;
-            this.txtLoan.Text = "20000";
+            this.txtLoan.Text = "100000";
             // 
             // txtYear
             // 

@@ -34,12 +34,12 @@ namespace Homework_Form
         }
         private void btnOpneHelloForm_Click(object sender, EventArgs e)
         {
-            childFormType = typeof(Frm_Greeting);
+            childFormType = typeof(Frm_Greeting_H01);
             CreateChildForm();
         }
         private void btnTest_Click(object sender, EventArgs e)
         {
-            childFormType = typeof(Frm_Loan);
+            childFormType = typeof(Frm_Loan_H02);
             CreateChildForm();
         }
     }

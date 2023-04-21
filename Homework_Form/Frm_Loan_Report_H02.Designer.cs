@@ -1,6 +1,6 @@
 ﻿namespace Homework_Form
 {
-    partial class Frm_Loan_Report
+    partial class Frm_Loan_Report_H02
     {
         /// <summary>
         /// Required designer variable.
@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        Frm_Loan frm = new Frm_Loan();
+        Frm_Loan_H02 frm = new Frm_Loan_H02();
         public void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();

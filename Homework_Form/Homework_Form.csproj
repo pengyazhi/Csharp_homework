@@ -46,43 +46,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Frm_Loan_Report.cs">
+    <Compile Include="Frm_Loan_Report_H02.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Loan_Report.Designer.cs">
-      <DependentUpon>Frm_Loan_Report.cs</DependentUpon>
+    <Compile Include="Frm_Loan_Report_H02.Designer.cs">
+      <DependentUpon>Frm_Loan_Report_H02.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Loan.cs">
+    <Compile Include="Frm_Loan_H02.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Loan.Designer.cs">
-      <DependentUpon>Frm_Loan.cs</DependentUpon>
+    <Compile Include="Frm_Loan_H02.Designer.cs">
+      <DependentUpon>Frm_Loan_H02.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Greeting.cs">
+    <Compile Include="Frm_Greeting_H01.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Greeting.Designer.cs">
-      <DependentUpon>Frm_Greeting.cs</DependentUpon>
+    <Compile Include="Frm_Greeting_H01.Designer.cs">
+      <DependentUpon>Frm_Greeting_H01.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_HomePage.cs">
+    <Compile Include="Frm_HomePage_H00.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_HomePage.Designer.cs">
-      <DependentUpon>Frm_HomePage.cs</DependentUpon>
+    <Compile Include="Frm_HomePage_H00.Designer.cs">
+      <DependentUpon>Frm_HomePage_H00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_POS_H03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_POS_H03.Designer.cs">
+      <DependentUpon>Frm_POS_H03.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Frm_Loan.resx">
-      <DependentUpon>Frm_Loan.cs</DependentUpon>
+    <Compile Include="Utility.cs" />
+    <EmbeddedResource Include="Frm_Loan_H02.resx">
+      <DependentUpon>Frm_Loan_H02.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Greeting.resx">
-      <DependentUpon>Frm_Greeting.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_Greeting_H01.resx">
+      <DependentUpon>Frm_Greeting_H01.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_HomePage.resx">
-      <DependentUpon>Frm_HomePage.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_HomePage_H00.resx">
+      <DependentUpon>Frm_HomePage_H00.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Loan_Report.resx">
-      <DependentUpon>Frm_Loan_Report.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_Loan_Report_H02.resx">
+      <DependentUpon>Frm_Loan_Report_H02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_POS_H03.resx">
+      <DependentUpon>Frm_POS_H03.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

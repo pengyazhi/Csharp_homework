@@ -1,6 +1,6 @@
 ﻿namespace Homework_Form
 {
-    partial class Frm_Greeting
+    partial class Frm_Greeting_H01
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Greeting));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Greeting_H01));
             this.labName = new System.Windows.Forms.Label();
             this.labEnglsihName = new System.Windows.Forms.Label();
             this.btnSex = new System.Windows.Forms.Label();
