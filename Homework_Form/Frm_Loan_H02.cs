@@ -76,7 +76,24 @@ namespace Homework_Form
             }
 
         }
+        //public Dictionary<string, decimal> Caculate()
+        //{
+        //    Dictionary<string, decimal> RETURN_dic = new Dictionary<string, decimal>();
+        //    RETURN_dic.Add("Loan", Convert.ToInt32(txtLoan.Text));
+        //    RETURN_dic.Add("LoanYear", Convert.ToInt32(txtYear.Text));
+        //    RETURN_dic.Add("NumOfMonth", Convert.ToInt32(txtYear.Text) * 12);
+        //    RETURN_dic.Add("LoanYearRate", Convert.ToInt32(txtInterestRate.Text));
+        //    RETURN_dic.Add("MonthlyInterestRate", Convert.ToDecimal(txtInterestRate.Text) / 1200);
+        //    RETURN_dic.Add("DownPayment", Convert.ToInt32(txtDdownPayment.Text));
+        //    RETURN_dic.Add("MonthRate", Math.Pow(1 + MonthlyInterestRate, NumOfMonth));
+        //    RETURN_dic.Add("EachMonRate", MonthRate * MonthlyInterestRate / (MonthRate - 1));
+        //    RETURN_dic.Add("PrincipalPlusInterest", Convert.ToInt32((Loan - DownPayment)) * Convert.ToDecima(EachMonRate));
+        //    RETURN_dic.Add("Total", Convert.ToInt32(PrincipalPlusInterest) * NumOfMonth);
 
+
+
+        //    return RETURN_dic;
+        //}
         private void btnReport_Click(object sender, EventArgs e)
         {
             if (Utility.IsNumber(txtLoan.Text) && Utility.IsNumber(txtYear.Text) && Utility.IsNumber(txtInterestRate.Text)

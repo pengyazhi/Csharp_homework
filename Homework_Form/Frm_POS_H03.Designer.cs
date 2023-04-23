@@ -38,9 +38,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panLsit = new System.Windows.Forms.Panel();
+            this.btnCleanMenuList = new System.Windows.Forms.Button();
+            this.labMenuList = new System.Windows.Forms.Label();
             this.panTotalPrice = new System.Windows.Forms.Panel();
+            this.labTotalPrice = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panPayment = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnPayByCredit = new System.Windows.Forms.Button();
+            this.btnPayByCash = new System.Windows.Forms.Button();
             this.panMenu.SuspendLayout();
             this.panLsit.SuspendLayout();
             this.panTotalPrice.SuspendLayout();
@@ -51,9 +57,10 @@
             // 
             this.labMenu.AutoSize = true;
             this.labMenu.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labMenu.Location = new System.Drawing.Point(16, 12);
+            this.labMenu.Location = new System.Drawing.Point(24, 18);
+            this.labMenu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labMenu.Name = "labMenu";
-            this.labMenu.Size = new System.Drawing.Size(118, 26);
+            this.labMenu.Size = new System.Drawing.Size(179, 40);
             this.labMenu.TabIndex = 2;
             this.labMenu.Text = "菜單 Menu";
             // 
@@ -65,9 +72,10 @@
             this.panMenu.Controls.Add(this.btnMenuJinLu);
             this.panMenu.Controls.Add(this.btnMenuBeer);
             this.panMenu.Controls.Add(this.labMenu);
-            this.panMenu.Location = new System.Drawing.Point(33, 63);
+            this.panMenu.Location = new System.Drawing.Point(50, 94);
+            this.panMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panMenu.Name = "panMenu";
-            this.panMenu.Size = new System.Drawing.Size(289, 447);
+            this.panMenu.Size = new System.Drawing.Size(432, 670);
             this.panMenu.TabIndex = 5;
             // 
             // btnMenuWhisky
@@ -77,12 +85,14 @@
             this.btnMenuWhisky.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMenuWhisky.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnMenuWhisky.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnMenuWhisky.Location = new System.Drawing.Point(7, 202);
+            this.btnMenuWhisky.Location = new System.Drawing.Point(10, 303);
+            this.btnMenuWhisky.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuWhisky.Name = "btnMenuWhisky";
-            this.btnMenuWhisky.Size = new System.Drawing.Size(134, 133);
+            this.btnMenuWhisky.Size = new System.Drawing.Size(201, 200);
             this.btnMenuWhisky.TabIndex = 6;
             this.btnMenuWhisky.Text = "威士忌\nWhisky\nNT250";
             this.btnMenuWhisky.UseVisualStyleBackColor = false;
+            this.btnMenuWhisky.Click += new System.EventHandler(this.btnMenuWhisky_Click);
             // 
             // btnMenuRedWine
             // 
@@ -91,12 +101,14 @@
             this.btnMenuRedWine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMenuRedWine.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnMenuRedWine.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnMenuRedWine.Location = new System.Drawing.Point(147, 202);
+            this.btnMenuRedWine.Location = new System.Drawing.Point(220, 303);
+            this.btnMenuRedWine.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuRedWine.Name = "btnMenuRedWine";
-            this.btnMenuRedWine.Size = new System.Drawing.Size(134, 133);
+            this.btnMenuRedWine.Size = new System.Drawing.Size(201, 200);
             this.btnMenuRedWine.TabIndex = 5;
             this.btnMenuRedWine.Text = "紅酒\nRedWine\nNT130";
             this.btnMenuRedWine.UseVisualStyleBackColor = false;
+            this.btnMenuRedWine.Click += new System.EventHandler(this.btnMenuRedWine_Click);
             // 
             // btnMenuJinLu
             // 
@@ -105,12 +117,14 @@
             this.btnMenuJinLu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMenuJinLu.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnMenuJinLu.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnMenuJinLu.Location = new System.Drawing.Point(147, 63);
+            this.btnMenuJinLu.Location = new System.Drawing.Point(220, 94);
+            this.btnMenuJinLu.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuJinLu.Name = "btnMenuJinLu";
-            this.btnMenuJinLu.Size = new System.Drawing.Size(134, 133);
+            this.btnMenuJinLu.Size = new System.Drawing.Size(201, 200);
             this.btnMenuJinLu.TabIndex = 4;
             this.btnMenuJinLu.Text = "真露\nJinLu\nNT220";
             this.btnMenuJinLu.UseVisualStyleBackColor = false;
+            this.btnMenuJinLu.Click += new System.EventHandler(this.btnMenuJinLu_Click);
             // 
             // btnMenuBeer
             // 
@@ -119,20 +133,23 @@
             this.btnMenuBeer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMenuBeer.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnMenuBeer.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnMenuBeer.Location = new System.Drawing.Point(7, 63);
+            this.btnMenuBeer.Location = new System.Drawing.Point(10, 94);
+            this.btnMenuBeer.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuBeer.Name = "btnMenuBeer";
-            this.btnMenuBeer.Size = new System.Drawing.Size(134, 133);
+            this.btnMenuBeer.Size = new System.Drawing.Size(201, 200);
             this.btnMenuBeer.TabIndex = 3;
             this.btnMenuBeer.Text = "啤酒\nbeer\nNT160";
             this.btnMenuBeer.UseVisualStyleBackColor = false;
+            this.btnMenuBeer.Click += new System.EventHandler(this.btnMenuBeer_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label3.Location = new System.Drawing.Point(24, 12);
+            this.label3.Location = new System.Drawing.Point(36, 18);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(136, 26);
+            this.label3.Size = new System.Drawing.Size(206, 40);
             this.label3.TabIndex = 5;
             this.label3.Text = "購物清單 List";
             // 
@@ -140,58 +157,137 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.Location = new System.Drawing.Point(18, 14);
+            this.label2.Location = new System.Drawing.Point(27, 21);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 26);
+            this.label2.Size = new System.Drawing.Size(208, 40);
             this.label2.TabIndex = 4;
             this.label2.Text = "付款方式 Pay";
             // 
             // panLsit
             // 
             this.panLsit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panLsit.Controls.Add(this.btnCleanMenuList);
+            this.panLsit.Controls.Add(this.labMenuList);
             this.panLsit.Controls.Add(this.label3);
-            this.panLsit.Location = new System.Drawing.Point(658, 63);
+            this.panLsit.Location = new System.Drawing.Point(987, 94);
+            this.panLsit.Margin = new System.Windows.Forms.Padding(4);
             this.panLsit.Name = "panLsit";
-            this.panLsit.Size = new System.Drawing.Size(289, 447);
+            this.panLsit.Size = new System.Drawing.Size(479, 670);
             this.panLsit.TabIndex = 6;
+            // 
+            // btnCleanMenuList
+            // 
+            this.btnCleanMenuList.Font = new System.Drawing.Font("微軟正黑體", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnCleanMenuList.Location = new System.Drawing.Point(256, 519);
+            this.btnCleanMenuList.Name = "btnCleanMenuList";
+            this.btnCleanMenuList.Size = new System.Drawing.Size(197, 69);
+            this.btnCleanMenuList.TabIndex = 7;
+            this.btnCleanMenuList.Text = "清除餐點";
+            this.btnCleanMenuList.UseVisualStyleBackColor = true;
+            this.btnCleanMenuList.Click += new System.EventHandler(this.btnCleanMenuList_Click);
+            // 
+            // labMenuList
+            // 
+            this.labMenuList.BackColor = System.Drawing.Color.White;
+            this.labMenuList.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labMenuList.Location = new System.Drawing.Point(30, 77);
+            this.labMenuList.Name = "labMenuList";
+            this.labMenuList.Size = new System.Drawing.Size(423, 413);
+            this.labMenuList.TabIndex = 6;
+            this.labMenuList.Text = "尚未點餐";
+            this.labMenuList.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // panTotalPrice
             // 
             this.panTotalPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panTotalPrice.Controls.Add(this.labTotalPrice);
             this.panTotalPrice.Controls.Add(this.label1);
-            this.panTotalPrice.Location = new System.Drawing.Point(348, 63);
+            this.panTotalPrice.Location = new System.Drawing.Point(522, 94);
+            this.panTotalPrice.Margin = new System.Windows.Forms.Padding(4);
             this.panTotalPrice.Name = "panTotalPrice";
-            this.panTotalPrice.Size = new System.Drawing.Size(289, 150);
+            this.panTotalPrice.Size = new System.Drawing.Size(432, 224);
             this.panTotalPrice.TabIndex = 6;
+            // 
+            // labTotalPrice
+            // 
+            this.labTotalPrice.BackColor = System.Drawing.Color.Black;
+            this.labTotalPrice.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labTotalPrice.ForeColor = System.Drawing.Color.White;
+            this.labTotalPrice.Location = new System.Drawing.Point(31, 77);
+            this.labTotalPrice.Name = "labTotalPrice";
+            this.labTotalPrice.Size = new System.Drawing.Size(356, 63);
+            this.labTotalPrice.TabIndex = 4;
+            this.labTotalPrice.Text = "NT$ 0";
+            this.labTotalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(18, 12);
+            this.label1.Location = new System.Drawing.Point(27, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 26);
+            this.label1.Size = new System.Drawing.Size(284, 40);
             this.label1.TabIndex = 3;
             this.label1.Text = "總金額 Total Price";
             // 
             // panPayment
             // 
             this.panPayment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panPayment.Controls.Add(this.label4);
+            this.panPayment.Controls.Add(this.btnPayByCredit);
+            this.panPayment.Controls.Add(this.btnPayByCash);
             this.panPayment.Controls.Add(this.label2);
-            this.panPayment.Location = new System.Drawing.Point(348, 270);
+            this.panPayment.Location = new System.Drawing.Point(522, 405);
+            this.panPayment.Margin = new System.Windows.Forms.Padding(4);
             this.panPayment.Name = "panPayment";
-            this.panPayment.Size = new System.Drawing.Size(289, 150);
+            this.panPayment.Size = new System.Drawing.Size(432, 224);
             this.panPayment.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label4.Location = new System.Drawing.Point(221, 157);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(172, 35);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "信用卡享9折優惠";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnPayByCredit
+            // 
+            this.btnPayByCredit.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPayByCredit.Location = new System.Drawing.Point(225, 83);
+            this.btnPayByCredit.Name = "btnPayByCredit";
+            this.btnPayByCredit.Size = new System.Drawing.Size(162, 65);
+            this.btnPayByCredit.TabIndex = 6;
+            this.btnPayByCredit.Text = "信用卡";
+            this.btnPayByCredit.UseVisualStyleBackColor = true;
+            this.btnPayByCredit.Click += new System.EventHandler(this.btnPayByCredit_Click);
+            // 
+            // btnPayByCash
+            // 
+            this.btnPayByCash.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPayByCash.Location = new System.Drawing.Point(34, 83);
+            this.btnPayByCash.Name = "btnPayByCash";
+            this.btnPayByCash.Size = new System.Drawing.Size(162, 65);
+            this.btnPayByCash.TabIndex = 5;
+            this.btnPayByCash.Text = "現金";
+            this.btnPayByCash.UseVisualStyleBackColor = true;
+            this.btnPayByCash.Click += new System.EventHandler(this.btnPayByCash_Click);
             // 
             // Frm_POS_H03
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(973, 622);
+            this.ClientSize = new System.Drawing.Size(1517, 788);
             this.Controls.Add(this.panPayment);
             this.Controls.Add(this.panTotalPrice);
             this.Controls.Add(this.panLsit);
             this.Controls.Add(this.panMenu);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_POS_H03";
             this.Text = "Frm_POS_H03";
             this.panMenu.ResumeLayout(false);
@@ -219,5 +315,11 @@
         private System.Windows.Forms.Button btnMenuWhisky;
         private System.Windows.Forms.Button btnMenuRedWine;
         private System.Windows.Forms.Button btnMenuJinLu;
+        private System.Windows.Forms.Button btnCleanMenuList;
+        private System.Windows.Forms.Label labMenuList;
+        private System.Windows.Forms.Label labTotalPrice;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnPayByCredit;
+        private System.Windows.Forms.Button btnPayByCash;
     }
 }
