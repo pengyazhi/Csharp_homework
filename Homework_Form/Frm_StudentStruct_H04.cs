@@ -37,36 +37,9 @@ namespace Homework_Form
 
         private void btnShowMaxMin_Click(object sender, EventArgs e)
         {
-            string highest= studentScore.Max(studentScore.Chi, studentScore.Math, studentScore.Eng);
-            string lowest = studentScore.Min(studentScore.Chi, studentScore.Math, studentScore.Eng);
+            string highest= studentScore.higestSub(studentScore.Chi, studentScore.Math, studentScore.Eng);
+            string lowest = studentScore.lowestSub(studentScore.Chi, studentScore.Math, studentScore.Eng);
             labMaxMinScore.Text = $"最高科目成績為：{highest}分\n最低科目成績為：{lowest}分";
-            //string Max = "國文";
-            //string Min = "國文";
-            //int HighestScore = studentScore.Chi;
-            //int LowestScore = studentScore.Chi;
-            //if (studentScore.Math > HighestScore)
-            //{
-            //    HighestScore = studentScore.Math;
-            //    Max = "數學";
-
-            //}
-            //if (studentScore.Eng > HighestScore)
-            //{
-            //    HighestScore = studentScore.Eng ;
-            //    Max = "英文";
-            //}
-            //if (studentScore.Math < LowestScore)
-            //{
-            //    LowestScore = studentScore.Math ;
-            //    Min = "數學";
-            //}
-            //if (studentScore.Eng < LowestScore)
-            //{
-            //    LowestScore = studentScore.Eng ;
-            //    Min = "英文";
-            //}
-
-
         }
     }
     

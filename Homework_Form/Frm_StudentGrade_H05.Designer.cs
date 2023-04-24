@@ -1,4 +1,7 @@
-﻿namespace Homework_Form
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace Homework_Form
 {
     partial class Frm_StudentGrade_H05
     {
@@ -28,6 +31,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtEngScore = new System.Windows.Forms.TextBox();
             this.txtMathScore = new System.Windows.Forms.TextBox();
             this.txtChiScore = new System.Windows.Forms.TextBox();
@@ -41,9 +48,8 @@
             this.btnSubjectCount = new System.Windows.Forms.Button();
             this.btnResetGrade = new System.Windows.Forms.Button();
             this.btnRadom20 = new System.Windows.Forms.Button();
-            this.rTxtBoxStudentGrade = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataStudentScorList = new System.Windows.Forms.DataGridView();
             this.colStudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colChiScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMathScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,106 +58,107 @@
             this.colAveScroe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colHighestScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLowestScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataStudentScorList)).BeginInit();
             this.SuspendLayout();
             // 
             // txtEngScore
             // 
-            this.txtEngScore.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtEngScore.Location = new System.Drawing.Point(145, 232);
-            this.txtEngScore.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEngScore.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtEngScore.Location = new System.Drawing.Point(166, 218);
+            this.txtEngScore.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtEngScore.MaxLength = 3;
             this.txtEngScore.Name = "txtEngScore";
-            this.txtEngScore.Size = new System.Drawing.Size(115, 45);
+            this.txtEngScore.Size = new System.Drawing.Size(131, 33);
             this.txtEngScore.TabIndex = 15;
             this.txtEngScore.Text = "0";
             this.txtEngScore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtMathScore
             // 
-            this.txtMathScore.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtMathScore.Location = new System.Drawing.Point(145, 155);
-            this.txtMathScore.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMathScore.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtMathScore.Location = new System.Drawing.Point(166, 145);
+            this.txtMathScore.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtMathScore.MaxLength = 3;
             this.txtMathScore.Name = "txtMathScore";
-            this.txtMathScore.Size = new System.Drawing.Size(115, 45);
+            this.txtMathScore.Size = new System.Drawing.Size(131, 33);
             this.txtMathScore.TabIndex = 14;
             this.txtMathScore.Text = "0";
             this.txtMathScore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtChiScore
             // 
-            this.txtChiScore.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtChiScore.Location = new System.Drawing.Point(145, 86);
-            this.txtChiScore.Margin = new System.Windows.Forms.Padding(4);
+            this.txtChiScore.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtChiScore.Location = new System.Drawing.Point(166, 81);
+            this.txtChiScore.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtChiScore.MaxLength = 3;
             this.txtChiScore.Name = "txtChiScore";
-            this.txtChiScore.Size = new System.Drawing.Size(115, 45);
+            this.txtChiScore.Size = new System.Drawing.Size(131, 33);
             this.txtChiScore.TabIndex = 13;
             this.txtChiScore.Text = "0";
             this.txtChiScore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtStudentName
             // 
-            this.txtStudentName.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtStudentName.Location = new System.Drawing.Point(145, 22);
-            this.txtStudentName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtStudentName.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtStudentName.Location = new System.Drawing.Point(166, 21);
+            this.txtStudentName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txtStudentName.MaxLength = 10;
             this.txtStudentName.Name = "txtStudentName";
-            this.txtStudentName.Size = new System.Drawing.Size(115, 45);
+            this.txtStudentName.Size = new System.Drawing.Size(131, 33);
             this.txtStudentName.TabIndex = 12;
             this.txtStudentName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labEngScore
             // 
             this.labEngScore.AutoSize = true;
-            this.labEngScore.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labEngScore.Location = new System.Drawing.Point(38, 235);
-            this.labEngScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labEngScore.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labEngScore.Location = new System.Drawing.Point(43, 220);
+            this.labEngScore.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.labEngScore.Name = "labEngScore";
-            this.labEngScore.Size = new System.Drawing.Size(99, 35);
+            this.labEngScore.Size = new System.Drawing.Size(67, 24);
             this.labEngScore.TabIndex = 11;
             this.labEngScore.Text = "英文：";
             // 
             // labMathScore
             // 
             this.labMathScore.AutoSize = true;
-            this.labMathScore.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labMathScore.Location = new System.Drawing.Point(38, 165);
-            this.labMathScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labMathScore.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labMathScore.Location = new System.Drawing.Point(43, 155);
+            this.labMathScore.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.labMathScore.Name = "labMathScore";
-            this.labMathScore.Size = new System.Drawing.Size(99, 35);
+            this.labMathScore.Size = new System.Drawing.Size(67, 24);
             this.labMathScore.TabIndex = 10;
             this.labMathScore.Text = "數學：";
             // 
             // labChiScore
             // 
             this.labChiScore.AutoSize = true;
-            this.labChiScore.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labChiScore.Location = new System.Drawing.Point(38, 96);
-            this.labChiScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labChiScore.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labChiScore.Location = new System.Drawing.Point(43, 90);
+            this.labChiScore.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.labChiScore.Name = "labChiScore";
-            this.labChiScore.Size = new System.Drawing.Size(99, 35);
+            this.labChiScore.Size = new System.Drawing.Size(67, 24);
             this.labChiScore.TabIndex = 9;
             this.labChiScore.Text = "國文：";
             // 
             // labStudentName
             // 
             this.labStudentName.AutoSize = true;
-            this.labStudentName.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labStudentName.Location = new System.Drawing.Point(38, 32);
-            this.labStudentName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labStudentName.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labStudentName.Location = new System.Drawing.Point(43, 30);
+            this.labStudentName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.labStudentName.Name = "labStudentName";
-            this.labStudentName.Size = new System.Drawing.Size(99, 35);
+            this.labStudentName.Size = new System.Drawing.Size(67, 24);
             this.labStudentName.TabIndex = 8;
             this.labStudentName.Text = "姓名：";
             // 
             // btnSaveStudentData
             // 
-            this.btnSaveStudentData.Location = new System.Drawing.Point(44, 292);
-            this.btnSaveStudentData.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSaveStudentData.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnSaveStudentData.Location = new System.Drawing.Point(50, 274);
+            this.btnSaveStudentData.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnSaveStudentData.Name = "btnSaveStudentData";
-            this.btnSaveStudentData.Size = new System.Drawing.Size(237, 50);
+            this.btnSaveStudentData.Size = new System.Drawing.Size(271, 47);
             this.btnSaveStudentData.TabIndex = 16;
             this.btnSaveStudentData.Text = "加入學生資料";
             this.btnSaveStudentData.UseVisualStyleBackColor = true;
@@ -159,76 +166,85 @@
             // 
             // btnRadomSaveData
             // 
-            this.btnRadomSaveData.Location = new System.Drawing.Point(44, 347);
-            this.btnRadomSaveData.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRadomSaveData.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnRadomSaveData.Location = new System.Drawing.Point(50, 325);
+            this.btnRadomSaveData.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnRadomSaveData.Name = "btnRadomSaveData";
-            this.btnRadomSaveData.Size = new System.Drawing.Size(237, 50);
+            this.btnRadomSaveData.Size = new System.Drawing.Size(271, 47);
             this.btnRadomSaveData.TabIndex = 17;
             this.btnRadomSaveData.Text = "隨機儲存資料";
             this.btnRadomSaveData.UseVisualStyleBackColor = true;
+            this.btnRadomSaveData.Click += new System.EventHandler(this.btnRadomSaveData_Click);
             // 
             // btnSubjectCount
             // 
-            this.btnSubjectCount.Location = new System.Drawing.Point(44, 405);
-            this.btnSubjectCount.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSubjectCount.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnSubjectCount.Location = new System.Drawing.Point(50, 380);
+            this.btnSubjectCount.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnSubjectCount.Name = "btnSubjectCount";
-            this.btnSubjectCount.Size = new System.Drawing.Size(237, 50);
+            this.btnSubjectCount.Size = new System.Drawing.Size(271, 47);
             this.btnSubjectCount.TabIndex = 18;
             this.btnSubjectCount.Text = "各科統計";
             this.btnSubjectCount.UseVisualStyleBackColor = true;
             // 
             // btnResetGrade
             // 
-            this.btnResetGrade.Location = new System.Drawing.Point(44, 518);
-            this.btnResetGrade.Margin = new System.Windows.Forms.Padding(4);
+            this.btnResetGrade.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnResetGrade.Location = new System.Drawing.Point(50, 486);
+            this.btnResetGrade.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnResetGrade.Name = "btnResetGrade";
-            this.btnResetGrade.Size = new System.Drawing.Size(237, 50);
+            this.btnResetGrade.Size = new System.Drawing.Size(271, 47);
             this.btnResetGrade.TabIndex = 19;
             this.btnResetGrade.Text = "重設所有資料";
             this.btnResetGrade.UseVisualStyleBackColor = true;
             // 
             // btnRadom20
             // 
-            this.btnRadom20.Location = new System.Drawing.Point(44, 576);
-            this.btnRadom20.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRadom20.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnRadom20.Location = new System.Drawing.Point(50, 540);
+            this.btnRadom20.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnRadom20.Name = "btnRadom20";
-            this.btnRadom20.Size = new System.Drawing.Size(237, 50);
+            this.btnRadom20.Size = new System.Drawing.Size(271, 47);
             this.btnRadom20.TabIndex = 20;
             this.btnRadom20.Text = "隨機加入20筆";
             this.btnRadom20.UseVisualStyleBackColor = true;
-            // 
-            // rTxtBoxStudentGrade
-            // 
-            this.rTxtBoxStudentGrade.BackColor = System.Drawing.SystemColors.Menu;
-            this.rTxtBoxStudentGrade.Font = new System.Drawing.Font("標楷體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.rTxtBoxStudentGrade.Location = new System.Drawing.Point(312, 22);
-            this.rTxtBoxStudentGrade.Margin = new System.Windows.Forms.Padding(4);
-            this.rTxtBoxStudentGrade.Name = "rTxtBoxStudentGrade";
-            this.rTxtBoxStudentGrade.ReadOnly = true;
-            this.rTxtBoxStudentGrade.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.rTxtBoxStudentGrade.Size = new System.Drawing.Size(630, 473);
-            this.rTxtBoxStudentGrade.TabIndex = 21;
-            this.rTxtBoxStudentGrade.Text = "姓名　　 國文　　英文　　數學　　總分　　平均　　最高　　最低\n";
+            this.btnRadom20.Click += new System.EventHandler(this.btnRadom20_Click);
             // 
             // richTextBox2
             // 
             this.richTextBox2.BackColor = System.Drawing.SystemColors.Menu;
             this.richTextBox2.Font = new System.Drawing.Font("標楷體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.richTextBox2.Location = new System.Drawing.Point(312, 518);
-            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.richTextBox2.Location = new System.Drawing.Point(357, 486);
+            this.richTextBox2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ReadOnly = true;
             this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.richTextBox2.Size = new System.Drawing.Size(630, 120);
+            this.richTextBox2.Size = new System.Drawing.Size(630, 113);
             this.richTextBox2.TabIndex = 22;
             this.richTextBox2.Text = "";
             // 
-            // dataGridView1
+            // dataStudentScorList
             // 
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("標楷體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataStudentScorList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataStudentScorList.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataStudentScorList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataStudentScorList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataStudentScorList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("標楷體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataStudentScorList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataStudentScorList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataStudentScorList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colStudentName,
             this.colChiScore,
             this.colMathScore,
@@ -237,22 +253,44 @@
             this.colAveScroe,
             this.colHighestScore,
             this.colLowestScore});
-            this.dataGridView1.Location = new System.Drawing.Point(331, 119);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 31;
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridView1.Size = new System.Drawing.Size(619, 171);
-            this.dataGridView1.TabIndex = 23;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("標楷體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataStudentScorList.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataStudentScorList.EnableHeadersVisualStyles = false;
+            this.dataStudentScorList.GridColor = System.Drawing.Color.Black;
+            this.dataStudentScorList.Location = new System.Drawing.Point(357, 21);
+            this.dataStudentScorList.Name = "dataStudentScorList";
+            this.dataStudentScorList.ReadOnly = true;
+            this.dataStudentScorList.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dataStudentScorList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataStudentScorList.RowHeadersVisible = false;
+            this.dataStudentScorList.RowHeadersWidth = 62;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("標楷體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataStudentScorList.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataStudentScorList.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataStudentScorList.RowTemplate.Height = 31;
+            this.dataStudentScorList.RowTemplate.ReadOnly = true;
+            this.dataStudentScorList.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataStudentScorList.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataStudentScorList.Size = new System.Drawing.Size(630, 458);
+            this.dataStudentScorList.TabIndex = 23;
             // 
             // colStudentName
             // 
+            this.colStudentName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.colStudentName.HeaderText = "姓名";
             this.colStudentName.MinimumWidth = 8;
             this.colStudentName.Name = "colStudentName";
             this.colStudentName.ReadOnly = true;
+            this.colStudentName.Width = 62;
             // 
             // colChiScore
             // 
@@ -312,12 +350,11 @@
             // 
             // Frm_StudentGrade_H05
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(979, 658);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1119, 617);
+            this.Controls.Add(this.dataStudentScorList);
             this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.rTxtBoxStudentGrade);
             this.Controls.Add(this.btnRadom20);
             this.Controls.Add(this.btnResetGrade);
             this.Controls.Add(this.btnSubjectCount);
@@ -331,11 +368,12 @@
             this.Controls.Add(this.labMathScore);
             this.Controls.Add(this.labChiScore);
             this.Controls.Add(this.labStudentName);
-            this.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Font = new System.Drawing.Font("標楷體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "Frm_StudentGrade_H05";
             this.Text = "Student Grade Form";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataStudentScorList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -356,9 +394,8 @@
         private System.Windows.Forms.Button btnSubjectCount;
         private System.Windows.Forms.Button btnResetGrade;
         private System.Windows.Forms.Button btnRadom20;
-        private System.Windows.Forms.RichTextBox rTxtBoxStudentGrade;
         private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataStudentScorList;
         private System.Windows.Forms.DataGridViewTextBoxColumn colStudentName;
         private System.Windows.Forms.DataGridViewTextBoxColumn colChiScore;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMathScore;

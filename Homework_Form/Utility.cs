@@ -44,68 +44,76 @@ namespace Homework_Form
         public int Chi { get; set; }
         public int Math { get; set; }
         public int Eng { get; set; }
-        //public int TotalGrade { get; set; }
-        //public int AverageGrade { get;set; }
-        //public int LowestGrade { get; set; }
-        //public int HigestGrade { get; set; }
-        StudentScore(string name,int chi ,int math,int eng)
-        {
-            Name = name;
-            Chi = chi;
-            Math = math;
-            Eng = eng;
-        }
-        public int AddGrade(int chi, int math, int eng)//相加
+        public int TotalScore { get; set; }
+        public int AverageScore { get; set; }
+        public int LowestScore { get; set; }
+        public int HigestScore { get; set; }
+        public string LowestSub{ get; set; }
+        public string HigestSub { get; set; }
+
+        //StudentScore(string name, int chi, int math, int eng,
+        //int total_score, int ave_score,string lowest_sub,string higestest_sub)
+        //{
+        //    Name = name;
+        //    Chi = chi;
+        //    Math = math;
+        //    Eng = eng;
+        //    TotalScore = total_score;
+        //    AverageScore = ave_score;
+        //    LowestSub = lowest_sub;
+        //    HigestSub = higestest_sub;
+
+        //}
+        public int AddUpGrade(int chi, int math, int eng)//總分
         {
             int[] CountGrade = { chi, math, eng };
-            int TotalGrade = 0;
+            TotalScore = 0;
             for (int i = 0; i < CountGrade.Length; i++)
             {
-                TotalGrade += CountGrade[i];
+                TotalScore += CountGrade[i];
             }
-            return TotalGrade;
+            return TotalScore;
         }
         public int AveGrade(int chi, int math, int eng)//平均
         {
-
-            int aveGrade = AddGrade(chi, math, eng)/3;
-            return aveGrade;
+            AverageScore = AddUpGrade(chi, math, eng)/3;
+            return AverageScore;
         }
-        public string Max(int chi, int math, int eng)
+        
+        public string higestSub(int chi, int math, int eng)
         {
-            string Max = "國文";
-            
-            int HighestScore = chi;
-            
-            if (Math > HighestScore)
-            {
-                HighestScore = Math;
-                Max = "數學";
+            HigestSub = "國文"; 
+            HigestSub = (math > chi && math > eng) ? 
+                $"數學{math}" : (eng > chi) ? $"英文{eng}" : HigestSub+ chi;
+            return HigestSub ;
+            //if (math > HigestGrade)
+            //{
+            //    HigestGrade = math;
+            //    HigestSub = "數學";
 
-            }
-            if (Eng > HighestScore)
-            {
-                HighestScore = Eng;
-                Max = "英文";
-            }
-            
-            return Max + HighestScore;
+            //}
+            //if (eng > HigestGrade)
+            //{
+            //    HigestGrade = eng;
+            //    HigestSub = "英文";
+            //}
         }
-        public string Min(int chi, int math, int eng)
+        public string lowestSub(int chi, int math, int eng)
         {
-            string Min = "國文";
-            int LowestScore = chi;
-            if (Math < LowestScore)
-            {
-                LowestScore = Math;
-                Min = "數學";
-            }
-            if (Eng < LowestScore)
-            {
-                LowestScore = Eng;
-                Min = "英文";
-            }
-            return Min + LowestScore ;
+            LowestSub = "國文";
+            LowestSub = (math < chi && math < eng) ?
+                $"數學{math}" : (eng < chi) ? $"英文{eng}" : LowestSub + chi;
+            return LowestSub ;
+            //if (math < LowestGrade)
+            //{
+            //    LowestGrade = math;
+            //    LowestSub = "數學";
+            //}
+            //if (eng < LowestGrade)
+            //{
+            //    LowestGrade = eng;
+            //    LowestSub = "英文";
+            //}
         }
     }
 }
