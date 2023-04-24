@@ -16,26 +16,27 @@ namespace Homework_Form
         {
             InitializeComponent();
         }
-        StudentScore studentScore = new StudentScore();
+        
         
         private void btnSaveStudentData_Click(object sender, EventArgs e)
         {
-            
+            StudentScore studentScore = 
+            new StudentScore(txtStudentName.Text,Convert.ToInt32( txtChiScore.Text), Convert.ToInt32(txtMathScore.Text), Convert.ToInt32(txtEngScore.Text));
             DataGridViewRow dr_new = new DataGridViewRow();
             dr_new.CreateCells(dataStudentScorList);
-            dr_new.Cells[0].Value = txtStudentName.Text;
-            dr_new.Cells[1].Value = txtChiScore.Text;
-            dr_new.Cells[2].Value = txtMathScore.Text;
-            dr_new.Cells[3].Value = txtEngScore.Text;
-            int add_up = studentScore.AddUpGrade(int.Parse(txtChiScore.Text), int.Parse(txtMathScore.Text), int.Parse(txtEngScore.Text));
-            dr_new.Cells[4].Value = add_up;
-            int ave_grade = studentScore.AveGrade(int.Parse(txtChiScore.Text), int.Parse(txtMathScore.Text), int.Parse(txtEngScore.Text));
-            dr_new.Cells[5].Value = ave_grade;
-            string higest_g = studentScore.higestSub(int.Parse(txtChiScore.Text), int.Parse(txtMathScore.Text), int.Parse(txtEngScore.Text));
-            string lowest_g = studentScore.lowestSub(int.Parse(txtChiScore.Text), int.Parse(txtMathScore.Text), int.Parse(txtEngScore.Text));
-            dr_new.Cells[6].Value = higest_g;
-            dr_new.Cells[7].Value = lowest_g;
-            
+            dr_new.Cells[0].Value = studentScore.Name;
+            dr_new.Cells[1].Value = studentScore.Chi;
+            dr_new.Cells[2].Value = studentScore.Math;
+            dr_new.Cells[3].Value = studentScore.Eng;
+            dr_new.Cells[4].Value = studentScore.AddUpGrade(studentScore.Chi, studentScore.Math, studentScore.Eng);
+            dr_new.Cells[5].Value = studentScore.AveGrade(studentScore.Chi, studentScore.Math, studentScore.Eng); ;
+            dr_new.Cells[6].Value = studentScore.higestSub(studentScore.Chi, studentScore.Math, studentScore.Eng);
+            dr_new.Cells[7].Value = studentScore.lowestSub(studentScore.Chi, studentScore.Math, studentScore.Eng);
+            //int add_up = studentScore.AddUpGrade(int.Parse(txtChiScore.Text), int.Parse(txtMathScore.Text), int.Parse(txtEngScore.Text));
+            //int ave_grade = studentScore.AveGrade(int.Parse(txtChiScore.Text), int.Parse(txtMathScore.Text), int.Parse(txtEngScore.Text));
+            //string higest_g = studentScore.higestSub(int.Parse(txtChiScore.Text), int.Parse(txtMathScore.Text), int.Parse(txtEngScore.Text));
+            //string lowest_g = studentScore.lowestSub(int.Parse(txtChiScore.Text), int.Parse(txtMathScore.Text), int.Parse(txtEngScore.Text));
+
             dataStudentScorList.Rows.Add(dr_new);
         }
 
@@ -43,23 +44,25 @@ namespace Homework_Form
         Random random = new Random();
         public void CreatRadomStudentScore()//生成一組資料
         {
+            
             DataGridViewRow dr_new = new DataGridViewRow();
             dr_new.CreateCells(dataStudentScorList);
             dr_new.Cells[0].Value = num;
             dataStudentScorList.Rows.Add(dr_new);
             num++;
 
-            int randomChi = random.Next(1, 101);
-            int randomMath = random.Next(1, 101);
-            int randomEng = random.Next(1, 101);
-
-            dr_new.Cells[1].Value = randomChi;
-            dr_new.Cells[2].Value = randomMath;
-            dr_new.Cells[3].Value = randomEng;
-            dr_new.Cells[4].Value = studentScore.AddUpGrade(randomChi, randomMath, randomEng);
-            dr_new.Cells[5].Value = studentScore.AveGrade(randomChi, randomMath, randomEng);
-            dr_new.Cells[6].Value = studentScore.higestSub(randomChi, randomMath, randomEng);
-            dr_new.Cells[7].Value = studentScore.lowestSub(randomChi, randomMath, randomEng);
+            //int randomChi = random.Next(1, 101);
+            //int randomMath = random.Next(1, 101);
+            //int randomEng = random.Next(1, 101);
+            StudentScore studentScore =
+           new StudentScore(txtStudentName.Text, random.Next(1, 101), random.Next(1, 101), random.Next(1, 101));
+            dr_new.Cells[1].Value = studentScore.Chi;
+            dr_new.Cells[2].Value = studentScore.Math;
+            dr_new.Cells[3].Value = studentScore.Eng;
+            dr_new.Cells[4].Value = studentScore.AddUpGrade(studentScore.Chi, studentScore.Math, studentScore.Eng);
+            dr_new.Cells[5].Value = studentScore.AveGrade(studentScore.Chi, studentScore.Math, studentScore.Eng);
+            dr_new.Cells[6].Value = studentScore.higestSub(studentScore.Chi, studentScore.Math, studentScore.Eng);
+            dr_new.Cells[7].Value = studentScore.lowestSub(studentScore.Chi, studentScore.Math, studentScore.Eng);
         }
 
         private void btnRadomSaveData_Click(object sender, EventArgs e)

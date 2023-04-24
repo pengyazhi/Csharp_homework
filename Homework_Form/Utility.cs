@@ -44,30 +44,28 @@ namespace Homework_Form
         public int Chi { get; set; }
         public int Math { get; set; }
         public int Eng { get; set; }
-        public int TotalScore { get; set; }
-        public int AverageScore { get; set; }
-        public int LowestScore { get; set; }
-        public int HigestScore { get; set; }
-        public string LowestSub{ get; set; }
-        public string HigestSub { get; set; }
-
-        //StudentScore(string name, int chi, int math, int eng,
-        //int total_score, int ave_score,string lowest_sub,string higestest_sub)
-        //{
-        //    Name = name;
-        //    Chi = chi;
-        //    Math = math;
-        //    Eng = eng;
-        //    TotalScore = total_score;
-        //    AverageScore = ave_score;
-        //    LowestSub = lowest_sub;
-        //    HigestSub = higestest_sub;
-
-        //}
+        //public int TotalScore;
+        //public int AverageScore;
+        //public int LowestScore { get; set; }
+        //public int HigestScore { get; set; }
+        //public string LowestSub;
+        //public string HigestSub;
+        public StudentScore(string name, int chi, int math, int eng/*,
+        int total_score, int ave_score, string lowest_sub, string higestest_sub*/)
+        {
+            Name = name;
+            Chi = chi;
+            Math = math;
+            Eng = eng;
+            //TotalScore = total_score;
+            //AverageScore = ave_score;
+            //LowestSub = lowest_sub;
+            //HigestSub = higestest_sub;
+        }
         public int AddUpGrade(int chi, int math, int eng)//總分
         {
             int[] CountGrade = { chi, math, eng };
-            TotalScore = 0;
+            int TotalScore = 0;
             for (int i = 0; i < CountGrade.Length; i++)
             {
                 TotalScore += CountGrade[i];
@@ -76,13 +74,13 @@ namespace Homework_Form
         }
         public int AveGrade(int chi, int math, int eng)//平均
         {
-            AverageScore = AddUpGrade(chi, math, eng)/3;
+            int AverageScore = AddUpGrade(chi, math, eng)/3;
             return AverageScore;
         }
         
         public string higestSub(int chi, int math, int eng)
         {
-            HigestSub = "國文"; 
+            string HigestSub = "國文"; 
             HigestSub = (math > chi && math > eng) ? 
                 $"數學{math}" : (eng > chi) ? $"英文{eng}" : HigestSub+ chi;
             return HigestSub ;
@@ -100,7 +98,7 @@ namespace Homework_Form
         }
         public string lowestSub(int chi, int math, int eng)
         {
-            LowestSub = "國文";
+            string LowestSub = "國文";
             LowestSub = (math < chi && math < eng) ?
                 $"數學{math}" : (eng < chi) ? $"英文{eng}" : LowestSub + chi;
             return LowestSub ;
