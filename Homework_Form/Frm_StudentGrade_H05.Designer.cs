@@ -33,6 +33,8 @@ namespace Homework_Form
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtEngScore = new System.Windows.Forms.TextBox();
@@ -186,6 +188,7 @@ namespace Homework_Form
             this.btnSubjectCount.TabIndex = 18;
             this.btnSubjectCount.Text = "各科統計";
             this.btnSubjectCount.UseVisualStyleBackColor = true;
+            this.btnSubjectCount.Click += new System.EventHandler(this.btnSubjectCount_Click);
             // 
             // btnResetGrade
             // 
@@ -253,14 +256,14 @@ namespace Homework_Form
             this.colAveScroe,
             this.colHighestScore,
             this.colLowestScore});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("標楷體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataStudentScorList.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("標楷體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataStudentScorList.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataStudentScorList.EnableHeadersVisualStyles = false;
             this.dataStudentScorList.GridColor = System.Drawing.Color.Black;
             this.dataStudentScorList.Location = new System.Drawing.Point(357, 21);
@@ -270,11 +273,11 @@ namespace Homework_Form
             this.dataStudentScorList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataStudentScorList.RowHeadersVisible = false;
             this.dataStudentScorList.RowHeadersWidth = 62;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("標楷體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataStudentScorList.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("標楷體", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataStudentScorList.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataStudentScorList.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataStudentScorList.RowTemplate.Height = 31;
             this.dataStudentScorList.RowTemplate.ReadOnly = true;
@@ -286,6 +289,9 @@ namespace Homework_Form
             // colStudentName
             // 
             this.colStudentName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.NullValue = null;
+            this.colStudentName.DefaultCellStyle = dataGridViewCellStyle3;
             this.colStudentName.HeaderText = "姓名";
             this.colStudentName.MinimumWidth = 8;
             this.colStudentName.Name = "colStudentName";
@@ -326,6 +332,9 @@ namespace Homework_Form
             // 
             // colAveScroe
             // 
+            dataGridViewCellStyle4.Format = "N1";
+            dataGridViewCellStyle4.NullValue = null;
+            this.colAveScroe.DefaultCellStyle = dataGridViewCellStyle4;
             this.colAveScroe.HeaderText = "平均";
             this.colAveScroe.MinimumWidth = 8;
             this.colAveScroe.Name = "colAveScroe";
@@ -396,13 +405,13 @@ namespace Homework_Form
         private System.Windows.Forms.Button btnRadom20;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.DataGridView dataStudentScorList;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colStudentName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colChiScore;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colMathScore;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colEngScore;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTotalScore;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colAveScroe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colHighestScore;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colLowestScore;
+        private DataGridViewTextBoxColumn colStudentName;
+        private DataGridViewTextBoxColumn colChiScore;
+        private DataGridViewTextBoxColumn colMathScore;
+        private DataGridViewTextBoxColumn colEngScore;
+        private DataGridViewTextBoxColumn colTotalScore;
+        private DataGridViewTextBoxColumn colAveScroe;
+        private DataGridViewTextBoxColumn colHighestScore;
+        private DataGridViewTextBoxColumn colLowestScore;
     }
 }

@@ -12,7 +12,7 @@ namespace Homework_Form
         {
             try
             {
-                int var1 = Convert.ToInt32(oText);
+                double var1 = Convert.ToInt32(oText);
                 return true;
             }
             catch
@@ -25,10 +25,10 @@ namespace Homework_Form
     //{
     //    public string ProductName { get; set; }
     //    public string ProductEngName { get; set; }
-    //    public int NumOfProduct {get; set; }
+    //    public double NumOfProduct {get; set; }
     //    public string PriceOfProduct { get; set; }
 
-    //    Menu(string ProductName, int NumOfProduct, string PriceOfProduct)
+    //    Menu(string ProductName, double NumOfProduct, string PriceOfProduct)
     //    {
     //        this.ProductName = ProductName;
     //        this.ProductEngName = ProductName;
@@ -41,17 +41,17 @@ namespace Homework_Form
     {
         
         public string Name { get; set; }
-        public int Chi { get; set; }
-        public int Math { get; set; }
-        public int Eng { get; set; }
-        //public int TotalScore;
-        //public int AverageScore;
-        //public int LowestScore { get; set; }
-        //public int HigestScore { get; set; }
+        public double Chi { get; set; }
+        public double Math { get; set; }
+        public double Eng { get; set; }
+        //public double TotalScore;
+        //public double AverageScore;
+        //public double LowestScore { get; set; }
+        //public double HigestScore { get; set; }
         //public string LowestSub;
         //public string HigestSub;
-        public StudentScore(string name, int chi, int math, int eng/*,
-        int total_score, int ave_score, string lowest_sub, string higestest_sub*/)
+        public StudentScore(string name, double chi, double math, double eng/*,
+        double total_score, double ave_score, string lowest_sub, string higestest_sub*/)
         {
             Name = name;
             Chi = chi;
@@ -62,23 +62,23 @@ namespace Homework_Form
             //LowestSub = lowest_sub;
             //HigestSub = higestest_sub;
         }
-        public int AddUpGrade(int chi, int math, int eng)//總分
+        public double AddUpScore(double chi, double math, double eng)//總分
         {
-            int[] CountGrade = { chi, math, eng };
-            int TotalScore = 0;
-            for (int i = 0; i < CountGrade.Length; i++)
+            double[] CountScore = { chi, math, eng };
+            double TotalScore = 0;
+            for (int i = 0; i < CountScore.Length; i++)
             {
-                TotalScore += CountGrade[i];
+                TotalScore += CountScore[i];
             }
             return TotalScore;
         }
-        public int AveGrade(int chi, int math, int eng)//平均
+        public double AveScore(double chi, double math, double eng)//平均
         {
-            int AverageScore = AddUpGrade(chi, math, eng)/3;
-            return AverageScore;
+            double AverageScore = AddUpScore(chi, math, eng)/3;
+            return  AverageScore;
         }
         
-        public string higestSub(int chi, int math, int eng)
+        public string higestSub(double chi, double math, double eng)
         {
             string HigestSub = "國文"; 
             HigestSub = (math > chi && math > eng) ? 
@@ -96,7 +96,7 @@ namespace Homework_Form
             //    HigestSub = "英文";
             //}
         }
-        public string lowestSub(int chi, int math, int eng)
+        public string lowestSub(double chi, double math, double eng)
         {
             string LowestSub = "國文";
             LowestSub = (math < chi && math < eng) ?
