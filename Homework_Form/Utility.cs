@@ -39,29 +39,34 @@ namespace Homework_Form
     //}
     public struct StudentScore
     {
+
+        //public string Name { get; set; }
+        //public double Chi { get; set; }
+        //public double Math { get; set; }
+        //public double Eng { get; set; }
+        public string Name;
+        public double Chi ;
+        public double Math ;
+        public double Eng ;
         
-        public string Name { get; set; }
-        public double Chi { get; set; }
-        public double Math { get; set; }
-        public double Eng { get; set; }
         //public double TotalScore;
         //public double AverageScore;
         //public double LowestScore { get; set; }
         //public double HigestScore { get; set; }
         //public string LowestSub;
         //public string HigestSub;
-        public StudentScore(string name, double chi, double math, double eng/*,
-        double total_score, double ave_score, string lowest_sub, string higestest_sub*/)
-        {
-            Name = name;
-            Chi = chi;
-            Math = math;
-            Eng = eng;
-            //TotalScore = total_score;
-            //AverageScore = ave_score;
-            //LowestSub = lowest_sub;
-            //HigestSub = higestest_sub;
-        }
+        //public StudentScore(string name, double chi, double math, double eng/*,
+        //double total_score, double ave_score, string lowest_sub, string higestest_sub*/)
+        //{
+        //    Name = name;
+        //    Chi = chi;
+        //    Math = math;
+        //    Eng = eng;
+        //    //TotalScore = total_score;
+        //    //AverageScore = ave_score;
+        //    //LowestSub = lowest_sub;
+        //    //HigestSub = higestest_sub;
+        //}
         public double AddUpScore(double chi, double math, double eng)//總分
         {
             double[] CountScore = { chi, math, eng };
@@ -72,6 +77,21 @@ namespace Homework_Form
             }
             return TotalScore;
         }
+
+        //public double AddUpScore(int subIndex)//總分
+        //{
+        //    double[,] CountScore = new double[100, subIndex];
+        //    double TotalScore = 0;
+        //    foreach (double item in CountScore)
+        //    {
+        //        TotalScore += item;
+        //    }
+        //    //for (int i = 0; i < CountScore.GetLength(0); i++)
+        //    //{
+        //    //    TotalScore += CountScore[i,1];
+        //    //}
+        //    return TotalScore;
+        //}
         public double AveScore(double chi, double math, double eng)//平均
         {
             double AverageScore = AddUpScore(chi, math, eng)/3;
