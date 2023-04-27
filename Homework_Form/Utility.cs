@@ -37,73 +37,45 @@ namespace Homework_Form
     //    }
 
     //}
+
     public struct StudentScore
     {
-
-        //public string Name { get; set; }
-        //public double Chi { get; set; }
-        //public double Math { get; set; }
-        //public double Eng { get; set; }
         public string Name;
         public double Chi ;
         public double Math ;
         public double Eng ;
-        
-        //public double TotalScore;
-        //public double AverageScore;
-        //public double LowestScore { get; set; }
-        //public double HigestScore { get; set; }
-        //public string LowestSub;
-        //public string HigestSub;
-        //public StudentScore(string name, double chi, double math, double eng/*,
-        //double total_score, double ave_score, string lowest_sub, string higestest_sub*/)
-        //{
-        //    Name = name;
-        //    Chi = chi;
-        //    Math = math;
-        //    Eng = eng;
-        //    //TotalScore = total_score;
-        //    //AverageScore = ave_score;
-        //    //LowestSub = lowest_sub;
-        //    //HigestSub = higestest_sub;
-        //}
-        public double AddUpScore(double chi, double math, double eng)//總分
+        public double TotalScore;
+        public double AverageScore;
+        public string HigestSub;
+        public string LowestSub;
+        public double AddUpScore(List<int> ScoreList)//總分
         {
-            double[] CountScore = { chi, math, eng };
-            double TotalScore = 0;
-            for (int i = 0; i < CountScore.Length; i++)
+            TotalScore = 0;
+            foreach(int item in ScoreList)
             {
-                TotalScore += CountScore[i];
+                TotalScore += item;
             }
             return TotalScore;
         }
 
-        //public double AddUpScore(int subIndex)//總分
-        //{
-        //    double[,] CountScore = new double[100, subIndex];
-        //    double TotalScore = 0;
-        //    foreach (double item in CountScore)
-        //    {
-        //        TotalScore += item;
-        //    }
-        //    //for (int i = 0; i < CountScore.GetLength(0); i++)
-        //    //{
-        //    //    TotalScore += CountScore[i,1];
-        //    //}
-        //    return TotalScore;
-        //}
-        public double AveScore(double chi, double math, double eng)//平均
+        public double AveScore(List<int> ScoreList)//平均
         {
-            double AverageScore = AddUpScore(chi, math, eng)/3;
+            AverageScore = AddUpScore(ScoreList) / ScoreList.Count;
             return  AverageScore;
         }
         
+        public void LowestAndHigestSub(List<int> ScoreList ,out int lowestScr,out int higestScr)
+        {
+            ScoreList.Sort();
+            lowestScr = ScoreList[0] ;
+            higestScr = ScoreList[ScoreList.Count-1];
+        }
         public string higestSub(double chi, double math, double eng)
         {
-            string HigestSub = "國文"; 
-            HigestSub = (math > chi && math > eng) ? 
-                $"數學{math}" : (eng > chi) ? $"英文{eng}" : HigestSub+ chi;
-            return HigestSub ;
+            HigestSub = "國文";
+            HigestSub = (math > chi && math > eng) ?
+                $"數學{math}" : (eng > chi) ? $"英文{eng}" : HigestSub + chi;
+            return HigestSub;
             //if (math > HigestGrade)
             //{
             //    HigestGrade = math;
@@ -118,10 +90,10 @@ namespace Homework_Form
         }
         public string lowestSub(double chi, double math, double eng)
         {
-            string LowestSub = "國文";
+            LowestSub = "國文";
             LowestSub = (math < chi && math < eng) ?
                 $"數學{math}" : (eng < chi) ? $"英文{eng}" : LowestSub + chi;
-            return LowestSub ;
+            return LowestSub;
             //if (math < LowestGrade)
             //{
             //    LowestGrade = math;

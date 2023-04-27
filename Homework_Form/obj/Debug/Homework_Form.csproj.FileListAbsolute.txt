@@ -58,7 +58,6 @@ C:\Users\王恩詠\Desktop\芝\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Hom
 C:\Users\王恩詠\Desktop\芝\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Homework_Form.Frm_StudentStruct_H04.resources
 C:\Users\王恩詠\Desktop\芝\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Homework_Form.Frm_StudentGrade_H05.resources
 C:\Users\User\source\repos\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Homework_Form.Frm_HomePage_H00.resources
-C:\Users\User\source\repos\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Homework_Form.Frm_StudentGrade_H05.resources
 C:\Users\User\source\repos\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Homework_Form.Frm_StudentStruct_H04.resources
 D:\yzyz8\OneDrive\桌面\CSharp\Csharp_homework\Homework_CSharp\Csharp_homework上傳這個道github\Homework_Form\bin\Debug\Homework_Form.exe.config
 D:\yzyz8\OneDrive\桌面\CSharp\Csharp_homework\Homework_CSharp\Csharp_homework上傳這個道github\Homework_Form\bin\Debug\Homework_Form.exe
@@ -77,3 +76,5 @@ D:\yzyz8\OneDrive\桌面\CSharp\Csharp_homework\Homework_CSharp\Csharp_homework�
 D:\yzyz8\OneDrive\桌面\CSharp\Csharp_homework\Homework_CSharp\Csharp_homework上傳這個道github\Homework_Form\obj\Debug\Homework_Form.csproj.CoreCompileInputs.cache
 D:\yzyz8\OneDrive\桌面\CSharp\Csharp_homework\Homework_CSharp\Csharp_homework上傳這個道github\Homework_Form\obj\Debug\Homework_Form.exe
 D:\yzyz8\OneDrive\桌面\CSharp\Csharp_homework\Homework_CSharp\Csharp_homework上傳這個道github\Homework_Form\obj\Debug\Homework_Form.pdb
+C:\Users\User\source\repos\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Homework_Form.Frm_StudentGrade_H05_dataGridView.resources
+C:\Users\User\source\repos\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Homework_Form.Frm_StudentGrade_H05_List.resources

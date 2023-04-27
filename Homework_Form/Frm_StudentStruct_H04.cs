@@ -33,14 +33,14 @@ namespace Homework_Form
         {
             labNameScore.Text = $"姓名：{studentScore.Name}\n國文成績：{studentScore.Chi}\n數學成績：{studentScore.Math}\n英文成績：{studentScore.Eng}";
         }
-        
 
         private void btnShowMaxMin_Click(object sender, EventArgs e)
         {
-            string highest= studentScore.higestSub(studentScore.Chi, studentScore.Math, studentScore.Eng);
+            string highest = studentScore.higestSub(studentScore.Chi, studentScore.Math, studentScore.Eng);
             string lowest = studentScore.lowestSub(studentScore.Chi, studentScore.Math, studentScore.Eng);
             labMaxMinScore.Text = $"最高科目成績為：{highest}分\n最低科目成績為：{lowest}分";
         }
+
     }
     
 }
