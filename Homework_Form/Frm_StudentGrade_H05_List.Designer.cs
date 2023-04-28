@@ -97,6 +97,7 @@
             // 
             this.txtChiScore.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtChiScore.Location = new System.Drawing.Point(99, 75);
+            this.txtChiScore.MaxLength = 3;
             this.txtChiScore.Name = "txtChiScore";
             this.txtChiScore.Size = new System.Drawing.Size(109, 30);
             this.txtChiScore.TabIndex = 5;
@@ -105,6 +106,7 @@
             // 
             this.txtMathScore.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtMathScore.Location = new System.Drawing.Point(99, 132);
+            this.txtMathScore.MaxLength = 3;
             this.txtMathScore.Name = "txtMathScore";
             this.txtMathScore.Size = new System.Drawing.Size(109, 30);
             this.txtMathScore.TabIndex = 6;
@@ -113,6 +115,7 @@
             // 
             this.txtEngScore.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtEngScore.Location = new System.Drawing.Point(99, 191);
+            this.txtEngScore.MaxLength = 3;
             this.txtEngScore.Name = "txtEngScore";
             this.txtEngScore.Size = new System.Drawing.Size(109, 30);
             this.txtEngScore.TabIndex = 7;
@@ -141,6 +144,8 @@
             // 
             // btnAddUpScore
             // 
+            this.btnAddUpScore.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnAddUpScore.Enabled = false;
             this.btnAddUpScore.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnAddUpScore.Location = new System.Drawing.Point(30, 358);
             this.btnAddUpScore.Name = "btnAddUpScore";
@@ -159,6 +164,7 @@
             this.btnRefreshScoreList.TabIndex = 11;
             this.btnRefreshScoreList.Text = "重設所有資料";
             this.btnRefreshScoreList.UseVisualStyleBackColor = true;
+            this.btnRefreshScoreList.Click += new System.EventHandler(this.btnRefreshScoreList_Click);
             // 
             // btnRadomSave20
             // 
@@ -177,6 +183,7 @@
             this.rTxtScoreList.Font = new System.Drawing.Font("標楷體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.rTxtScoreList.Location = new System.Drawing.Point(247, 22);
             this.rTxtScoreList.Name = "rTxtScoreList";
+            this.rTxtScoreList.ReadOnly = true;
             this.rTxtScoreList.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.rTxtScoreList.Size = new System.Drawing.Size(565, 373);
             this.rTxtScoreList.TabIndex = 15;
@@ -188,6 +195,7 @@
             this.rTxtShowAll.Font = new System.Drawing.Font("標楷體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.rTxtShowAll.Location = new System.Drawing.Point(247, 417);
             this.rTxtShowAll.Name = "rTxtShowAll";
+            this.rTxtShowAll.ReadOnly = true;
             this.rTxtShowAll.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.rTxtShowAll.Size = new System.Drawing.Size(565, 111);
             this.rTxtShowAll.TabIndex = 16;

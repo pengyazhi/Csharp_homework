@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -43,32 +45,38 @@ namespace Homework_Form
         public string Name;
         public double Chi ;
         public double Math ;
-        public double Eng ;
+        public double Eng;
         public double TotalScore;
         public double AverageScore;
         public string HigestSub;
         public string LowestSub;
-        public double AddUpScore(List<int> ScoreList)//總分
+        //public double ChiTotalScore;
+        //public double MathTotalScore;
+        //public double EngTotalScore;
+        public double AddUpScore()//總分
         {
-            TotalScore = 0;
-            foreach(int item in ScoreList)
-            {
-                TotalScore += item;
-            }
+            TotalScore =Chi +Math +Eng;
             return TotalScore;
         }
-
-        public double AveScore(List<int> ScoreList)//平均
-        {
-            AverageScore = AddUpScore(ScoreList) / ScoreList.Count;
-            return  AverageScore;
-        }
         
-        public void LowestAndHigestSub(List<int> ScoreList ,out int lowestScr,out int higestScr)
+
+
+        public double AveScore()//平均
+        {
+            AverageScore = TotalScore / 3;
+            return AverageScore;
+        }
+
+        public void LS(List<int> ScoreList ,out int lowestScr)
         {
             ScoreList.Sort();
             lowestScr = ScoreList[0] ;
-            higestScr = ScoreList[ScoreList.Count-1];
+            
+        }
+        public void HS(List<int> ScoreList, out int higestScr)
+        {
+            ScoreList.Sort();
+            higestScr = ScoreList[ScoreList.Count - 1];
         }
         public string higestSub(double chi, double math, double eng)
         {
@@ -76,17 +84,7 @@ namespace Homework_Form
             HigestSub = (math > chi && math > eng) ?
                 $"數學{math}" : (eng > chi) ? $"英文{eng}" : HigestSub + chi;
             return HigestSub;
-            //if (math > HigestGrade)
-            //{
-            //    HigestGrade = math;
-            //    HigestSub = "數學";
-
-            //}
-            //if (eng > HigestGrade)
-            //{
-            //    HigestGrade = eng;
-            //    HigestSub = "英文";
-            //}
+            
         }
         public string lowestSub(double chi, double math, double eng)
         {
@@ -94,16 +92,7 @@ namespace Homework_Form
             LowestSub = (math < chi && math < eng) ?
                 $"數學{math}" : (eng < chi) ? $"英文{eng}" : LowestSub + chi;
             return LowestSub;
-            //if (math < LowestGrade)
-            //{
-            //    LowestGrade = math;
-            //    LowestSub = "數學";
-            //}
-            //if (eng < LowestGrade)
-            //{
-            //    LowestGrade = eng;
-            //    LowestSub = "英文";
-            //}
+           
         }
     }
 }

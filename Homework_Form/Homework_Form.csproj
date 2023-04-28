@@ -46,9 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Frm_StudentGrade_H05_dataGridView.cs" />
-    <Compile Include="Frm_StudentGrade_H05_dataGridView.Designer.cs">
-      <DependentUpon>Frm_StudentGrade_H05_dataGridView.cs</DependentUpon>
+    <Compile Include="Frm_06_StudentGradesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_06_StudentGradesList.Designer.cs">
+      <DependentUpon>Frm_06_StudentGradesList.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_StudentGrade_H05_List.cs">
       <SubType>Form</SubType>
@@ -95,6 +97,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility.cs" />
+    <EmbeddedResource Include="Frm_06_StudentGradesList.resx">
+      <DependentUpon>Frm_06_StudentGradesList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Loan_H02.resx">
       <DependentUpon>Frm_Loan_H02.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,9 +114,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_POS_H03.resx">
       <DependentUpon>Frm_POS_H03.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frm_StudentGrade_H05_dataGridView.resx">
-      <DependentUpon>Frm_StudentGrade_H05_dataGridView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_StudentGrade_H05_List.resx">
       <DependentUpon>Frm_StudentGrade_H05_List.cs</DependentUpon>
