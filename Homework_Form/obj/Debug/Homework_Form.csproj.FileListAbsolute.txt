@@ -78,3 +78,22 @@ D:\yzyz8\OneDrive\桌面\CSharp\Csharp_homework\Homework_CSharp\Csharp_homework�
 D:\yzyz8\OneDrive\桌面\CSharp\Csharp_homework\Homework_CSharp\Csharp_homework上傳這個道github\Homework_Form\obj\Debug\Homework_Form.pdb
 C:\Users\User\source\repos\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Homework_Form.Frm_StudentGrade_H05_dataGridView.resources
 C:\Users\User\source\repos\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Homework_Form.Frm_StudentGrade_H05_List.resources
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\bin\Debug\Homework_Form.exe.config
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\bin\Debug\Homework_Form.exe
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\bin\Debug\Homework_Form.pdb
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.csproj.AssemblyReference.cache
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.csproj.SuggestedBindingRedirects.cache
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_Claculate_H07.resources
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_StudentGradesList_06.resources
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_Loan_H02.resources
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_Greeting_H01.resources
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_HomePage_H00.resources
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_Loan_Report_H02.resources
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_POS_H03.resources
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_StudentGrade_H05_List.resources
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_StudentStruct_H04.resources
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Properties.Resources.resources
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.csproj.GenerateResource.cache
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.csproj.CoreCompileInputs.cache
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.exe
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.pdb

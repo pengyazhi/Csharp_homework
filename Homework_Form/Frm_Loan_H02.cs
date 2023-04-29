@@ -108,5 +108,7 @@ namespace Homework_Form
                 MessageBox.Show("請輸入正整數");
             }
         }
+
+        
     }
 }
