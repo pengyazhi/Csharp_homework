@@ -16,12 +16,10 @@ namespace Homework_Form
 		{
 			InitializeComponent();
 		}
-
-		
-		 
+ 
 		private Form childForm = null;
 		//創建一個方法使開啟的form都會顯示在Panel2中
-		private void CreateChildForm(System.Type p_Form)
+		private void CreateChildForm(Type p_Form)
 		{
 			if (childForm != null)
 			{
@@ -29,7 +27,9 @@ namespace Homework_Form
 			}
 			childForm = (Form)Activator.CreateInstance(p_Form);
 			childForm.TopLevel = false;
-			splitContainer2.Panel2.Controls.Add(childForm);
+            
+
+            splitContainer2.Panel2.Controls.Add(childForm);
 			childForm.Show();
 		}
 		private void btnOpneHelloForm_Click(object sender, EventArgs e)
@@ -42,5 +42,43 @@ namespace Homework_Form
 			Type childFormType = typeof(Frm_Loan_H02);
 			CreateChildForm(childFormType);
 		}
-	}
+
+        private void btnPOS_Click(object sender, EventArgs e)
+        {
+            Type childFormType = typeof(Frm_POS_H03);
+            CreateChildForm(childFormType);
+            
+        }
+
+        private void btnStudentStrucrForm_Click(object sender, EventArgs e)
+        {
+            Type childFormType = typeof(Frm_StudentStruct_H04);
+            CreateChildForm(childFormType);
+            
+        }
+
+        private void btnStudentGrade_Click(object sender, EventArgs e)
+        {
+            Type childFormType = typeof(Frm_StudentGrade_H05_List);
+            CreateChildForm(childFormType);
+            
+        }
+
+        private void btnStudentGradeList_Click(object sender, EventArgs e)
+        {
+            Type childFormType = typeof(Frm_StudentGradesList_06);
+            CreateChildForm(childFormType);
+            
+
+        }
+
+        private void btnCalculator_Click(object sender, EventArgs e)
+        {
+            Type childFormType = typeof(Frm_Calculator_H07);
+            CreateChildForm(childFormType);
+            
+        }
+
+        
+    }
 }

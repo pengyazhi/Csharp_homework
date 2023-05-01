@@ -22,11 +22,22 @@ namespace Homework_Form
         //DataTable dataTable = new DataTable("MyDataTable");
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if(!string.IsNullOrEmpty(txtStudentName.Text) && Utility.IsNumber(txtChiScore.Text) && Utility.IsNumber(txtMathScore.Text) && Utility.IsNumber(txtEngScore.Text))
+            {
+                studentScore.Name = txtStudentName.Text;
+                studentScore.Chi = int.Parse(txtChiScore.Text);
+                studentScore.Math = int.Parse(txtMathScore.Text);
+                studentScore.Eng = int.Parse(txtEngScore.Text);
+            }
+            else if (string.IsNullOrEmpty(txtStudentName.Text))
+            {
+                MessageBox.Show("請輸入姓名");
+            }
+            else
+            {
+                MessageBox.Show("請輸入正整數");
+            }
             
-            studentScore.Name = txtStudentName.Text;
-            studentScore.Chi = int.Parse(txtChiScore.Text);
-            studentScore.Math = int.Parse(txtMathScore.Text);
-            studentScore.Eng = int.Parse(txtEngScore.Text);
         }
 
         private void btnShowSaved_Click(object sender, EventArgs e)
@@ -41,6 +52,20 @@ namespace Homework_Form
             labMaxMinScore.Text = $"最高科目成績為：{highest}分\n最低科目成績為：{lowest}分";
         }
 
+        private void txtChiScore_Enter(object sender, EventArgs e)
+        {
+            txtChiScore.Text = "";
+        }
+
+        private void txtMathScore_Enter(object sender, EventArgs e)
+        {
+            txtMathScore.Text = "";
+        }
+
+        private void txtEngScore_Enter(object sender, EventArgs e)
+        {
+            txtEngScore.Text = "";
+        }
     }
     
 }

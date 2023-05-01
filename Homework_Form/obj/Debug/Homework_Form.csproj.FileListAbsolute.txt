@@ -83,7 +83,6 @@ C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\bin\Debug\Homew
 C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\bin\Debug\Homework_Form.pdb
 C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.csproj.AssemblyReference.cache
 C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.csproj.SuggestedBindingRedirects.cache
-C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_Claculate_H07.resources
 C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_StudentGradesList_06.resources
 C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_Loan_H02.resources
 C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_Greeting_H01.resources
@@ -97,3 +96,5 @@ C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homew
 C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.csproj.CoreCompileInputs.cache
 C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.exe
 C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.pdb
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_Calculator_H07.resources
+C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_H08_ForDoWhileMethod.resources

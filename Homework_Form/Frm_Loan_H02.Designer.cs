@@ -93,18 +93,17 @@
             // 
             this.txtLoan.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtLoan.Location = new System.Drawing.Point(498, 96);
-            this.txtLoan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLoan.Margin = new System.Windows.Forms.Padding(4);
             this.txtLoan.Name = "txtLoan";
             this.txtLoan.Size = new System.Drawing.Size(181, 49);
             this.txtLoan.TabIndex = 4;
             this.txtLoan.Text = "100000";
-           
             // 
             // txtYear
             // 
             this.txtYear.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtYear.Location = new System.Drawing.Point(498, 182);
-            this.txtYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtYear.Margin = new System.Windows.Forms.Padding(4);
             this.txtYear.Name = "txtYear";
             this.txtYear.Size = new System.Drawing.Size(181, 49);
             this.txtYear.TabIndex = 5;
@@ -114,7 +113,7 @@
             // 
             this.txtInterestRate.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtInterestRate.Location = new System.Drawing.Point(498, 256);
-            this.txtInterestRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtInterestRate.Margin = new System.Windows.Forms.Padding(4);
             this.txtInterestRate.Name = "txtInterestRate";
             this.txtInterestRate.Size = new System.Drawing.Size(181, 49);
             this.txtInterestRate.TabIndex = 6;
@@ -124,7 +123,7 @@
             // 
             this.txtDdownPayment.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtDdownPayment.Location = new System.Drawing.Point(498, 336);
-            this.txtDdownPayment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDdownPayment.Margin = new System.Windows.Forms.Padding(4);
             this.txtDdownPayment.Name = "txtDdownPayment";
             this.txtDdownPayment.Size = new System.Drawing.Size(181, 49);
             this.txtDdownPayment.TabIndex = 7;
@@ -135,7 +134,7 @@
             this.btnPMT.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnPMT.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnPMT.Location = new System.Drawing.Point(372, 442);
-            this.btnPMT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPMT.Margin = new System.Windows.Forms.Padding(4);
             this.btnPMT.Name = "btnPMT";
             this.btnPMT.Size = new System.Drawing.Size(214, 64);
             this.btnPMT.TabIndex = 8;
@@ -148,7 +147,7 @@
             this.btnTotal.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnTotal.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnTotal.Location = new System.Drawing.Point(372, 531);
-            this.btnTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTotal.Margin = new System.Windows.Forms.Padding(4);
             this.btnTotal.Name = "btnTotal";
             this.btnTotal.Size = new System.Drawing.Size(214, 64);
             this.btnTotal.TabIndex = 9;
@@ -161,7 +160,7 @@
             this.btnReport.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnReport.ForeColor = System.Drawing.Color.SteelBlue;
             this.btnReport.Location = new System.Drawing.Point(372, 618);
-            this.btnReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReport.Margin = new System.Windows.Forms.Padding(4);
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(214, 64);
             this.btnReport.TabIndex = 10;
@@ -186,8 +185,10 @@
             this.Controls.Add(this.labYear);
             this.Controls.Add(this.labLoan);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_Loan_H02";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Frm_Loan";
             this.ResumeLayout(false);
             this.PerformLayout();

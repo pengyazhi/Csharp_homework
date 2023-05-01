@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Homework_Form
 {
-    public partial class Frm_Claculate_H07 : Form
+    public partial class Frm_Calculator_H07 : Form
     {
-        public Frm_Claculate_H07()
+        public Frm_Calculator_H07()
         {
             InitializeComponent();
         }

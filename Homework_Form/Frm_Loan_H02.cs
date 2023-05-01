@@ -33,8 +33,16 @@ namespace Homework_Form
             if (Utility.IsNumber(txtLoan.Text) && Utility.IsNumber(txtYear.Text) && Utility.IsNumber(txtInterestRate.Text)
                 && Utility.IsNumber(txtDdownPayment.Text))
             {
-                Caculate();
-                MessageBox.Show($"每月應付本息為{Convert.ToInt32(PrincipalPlusInterest)}元。");
+                if(Convert.ToInt32(txtLoan.Text) > 0 && Convert.ToInt32(txtYear.Text) > 0 && Convert.ToInt32(txtInterestRate.Text) > 0 && Convert.ToInt32(txtDdownPayment.Text) >= 0)
+                {
+                    Caculate();
+                    MessageBox.Show($"每月應付本息為{Convert.ToInt32(PrincipalPlusInterest)}元。");
+                }
+                else
+                {
+                    MessageBox.Show("請輸入大於0的數值");
+                }
+                
             }
             else
             {
@@ -47,8 +55,15 @@ namespace Homework_Form
             if (Utility.IsNumber(txtLoan.Text) && Utility.IsNumber(txtYear.Text) && Utility.IsNumber(txtInterestRate.Text)
                 && Utility.IsNumber(txtDdownPayment.Text))
             {
-                Caculate();
-                MessageBox.Show($"總付額為{Total}元。");
+                if (Convert.ToInt32(txtLoan.Text) > 0 && Convert.ToInt32(txtYear.Text) > 0 && Convert.ToInt32(txtInterestRate.Text) > 0 && Convert.ToInt32(txtDdownPayment.Text) >= 0)
+                {
+                    Caculate();
+                    MessageBox.Show($"總付額為{Total}元。");
+                }
+                else
+                {
+                    MessageBox.Show("請輸入大於0的數值");
+                }
             }
             else
             {
@@ -59,21 +74,19 @@ namespace Homework_Form
         }
         public void Caculate()
         {
-            
-            {
-                Loan = Convert.ToInt32(txtLoan.Text); //貸款金額
-                LoanYear = Convert.ToInt32(txtYear.Text);//貸款年數
-                NumOfMonth = Convert.ToInt32(txtYear.Text) * 12; //還款月數 = 還款年*12
-                LoanYearRate = Convert.ToInt32(txtInterestRate.Text);
-                MonthlyInterestRate = Convert.ToDouble(txtInterestRate.Text) / 1200; //月利率=年利率/12
-                DownPayment = Convert.ToInt32(txtDdownPayment.Text); //頭期款
-                                                                     //每月應付本息金額之平均攤還率:{[(1＋月利率)^月數]×月利率}÷{[(1＋月利率)^月數]－1}
-                MonthRate = Math.Pow(1 + MonthlyInterestRate, NumOfMonth);//(1＋月利率)**月數 
-                EachMonRate = MonthRate * MonthlyInterestRate / (MonthRate - 1); //每月應付本息金額之平均攤還率
-                                                                                 //平均每月應攤付本息金額＝貸款本金×每月應付本息金額之平均攤還率＝每月應還本金金額＋每 月應付利息金額
-                PrincipalPlusInterest = Convert.ToInt32((Loan - DownPayment)) * Convert.ToDecimal(EachMonRate);
-                Total = Convert.ToInt32(PrincipalPlusInterest) * NumOfMonth;
-            }
+            Loan = Convert.ToInt32(txtLoan.Text); //貸款金額
+            LoanYear = Convert.ToInt32(txtYear.Text);//貸款年數
+            NumOfMonth = Convert.ToInt32(txtYear.Text) * 12; //還款月數 = 還款年*12
+            LoanYearRate = Convert.ToInt32(txtInterestRate.Text);
+            MonthlyInterestRate = Convert.ToDouble(txtInterestRate.Text) / 1200; //月利率=年利率/12
+            DownPayment = Convert.ToInt32(txtDdownPayment.Text); //頭期款
+                                                                 //每月應付本息金額之平均攤還率:{[(1＋月利率)^月數]×月利率}÷{[(1＋月利率)^月數]－1}
+            MonthRate = Math.Pow(1 + MonthlyInterestRate, NumOfMonth);//(1＋月利率)**月數 
+            EachMonRate = MonthRate * MonthlyInterestRate / (MonthRate - 1); //每月應付本息金額之平均攤還率
+                                                                             //平均每月應攤付本息金額＝貸款本金×每月應付本息金額之平均攤還率＝每月應還本金金額＋每 月應付利息金額
+            PrincipalPlusInterest = Convert.ToInt32((Loan - DownPayment)) * Convert.ToDecimal(EachMonRate);
+            Total = Convert.ToInt32(PrincipalPlusInterest) * NumOfMonth;
+
 
         }
         //public Dictionary<string, decimal> Caculate()
@@ -99,9 +112,16 @@ namespace Homework_Form
             if (Utility.IsNumber(txtLoan.Text) && Utility.IsNumber(txtYear.Text) && Utility.IsNumber(txtInterestRate.Text)
                 && Utility.IsNumber(txtDdownPayment.Text))
             {
-                Caculate();
-                Frm_Loan_Report_H02 frm = new Frm_Loan_Report_H02();
-                frm.Show();
+                if (Convert.ToInt32(txtLoan.Text) > 0 && Convert.ToInt32(txtYear.Text) > 0 && Convert.ToInt32(txtInterestRate.Text) > 0 && Convert.ToInt32(txtDdownPayment.Text) >= 0)
+                {
+                    Caculate();
+                    Frm_Loan_Report_H02 frm = new Frm_Loan_Report_H02();
+                    frm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("請輸入大於0的數值");
+                }
             }
             else
             {

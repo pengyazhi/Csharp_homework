@@ -49,9 +49,10 @@
             // 
             this.labName.AutoSize = true;
             this.labName.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labName.Location = new System.Drawing.Point(26, 28);
+            this.labName.Location = new System.Drawing.Point(24, 33);
+            this.labName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labName.Name = "labName";
-            this.labName.Size = new System.Drawing.Size(67, 24);
+            this.labName.Size = new System.Drawing.Size(102, 36);
             this.labName.TabIndex = 0;
             this.labName.Text = "姓名：";
             // 
@@ -59,9 +60,10 @@
             // 
             this.labChi.AutoSize = true;
             this.labChi.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labChi.Location = new System.Drawing.Point(26, 81);
+            this.labChi.Location = new System.Drawing.Point(24, 113);
+            this.labChi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labChi.Name = "labChi";
-            this.labChi.Size = new System.Drawing.Size(67, 24);
+            this.labChi.Size = new System.Drawing.Size(102, 36);
             this.labChi.TabIndex = 1;
             this.labChi.Text = "國文：";
             // 
@@ -69,9 +71,10 @@
             // 
             this.labMath.AutoSize = true;
             this.labMath.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labMath.Location = new System.Drawing.Point(26, 138);
+            this.labMath.Location = new System.Drawing.Point(24, 198);
+            this.labMath.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labMath.Name = "labMath";
-            this.labMath.Size = new System.Drawing.Size(67, 24);
+            this.labMath.Size = new System.Drawing.Size(102, 36);
             this.labMath.TabIndex = 2;
             this.labMath.Text = "數學：";
             // 
@@ -79,53 +82,59 @@
             // 
             this.labEng.AutoSize = true;
             this.labEng.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labEng.Location = new System.Drawing.Point(26, 194);
+            this.labEng.Location = new System.Drawing.Point(24, 282);
+            this.labEng.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labEng.Name = "labEng";
-            this.labEng.Size = new System.Drawing.Size(67, 24);
+            this.labEng.Size = new System.Drawing.Size(102, 36);
             this.labEng.TabIndex = 3;
             this.labEng.Text = "英文：";
             // 
             // txtStudentName
             // 
             this.txtStudentName.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtStudentName.Location = new System.Drawing.Point(99, 22);
+            this.txtStudentName.Location = new System.Drawing.Point(133, 24);
+            this.txtStudentName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtStudentName.Name = "txtStudentName";
-            this.txtStudentName.Size = new System.Drawing.Size(109, 30);
+            this.txtStudentName.Size = new System.Drawing.Size(162, 42);
             this.txtStudentName.TabIndex = 4;
             // 
             // txtChiScore
             // 
             this.txtChiScore.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtChiScore.Location = new System.Drawing.Point(99, 75);
+            this.txtChiScore.Location = new System.Drawing.Point(133, 103);
+            this.txtChiScore.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtChiScore.MaxLength = 3;
             this.txtChiScore.Name = "txtChiScore";
-            this.txtChiScore.Size = new System.Drawing.Size(109, 30);
+            this.txtChiScore.Size = new System.Drawing.Size(162, 42);
             this.txtChiScore.TabIndex = 5;
             // 
             // txtMathScore
             // 
             this.txtMathScore.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtMathScore.Location = new System.Drawing.Point(99, 132);
+            this.txtMathScore.Location = new System.Drawing.Point(133, 189);
+            this.txtMathScore.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMathScore.MaxLength = 3;
             this.txtMathScore.Name = "txtMathScore";
-            this.txtMathScore.Size = new System.Drawing.Size(109, 30);
+            this.txtMathScore.Size = new System.Drawing.Size(162, 42);
             this.txtMathScore.TabIndex = 6;
             // 
             // txtEngScore
             // 
             this.txtEngScore.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtEngScore.Location = new System.Drawing.Point(99, 191);
+            this.txtEngScore.Location = new System.Drawing.Point(133, 277);
+            this.txtEngScore.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEngScore.MaxLength = 3;
             this.txtEngScore.Name = "txtEngScore";
-            this.txtEngScore.Size = new System.Drawing.Size(109, 30);
+            this.txtEngScore.Size = new System.Drawing.Size(162, 42);
             this.txtEngScore.TabIndex = 7;
             // 
             // btnAddStudentValue
             // 
             this.btnAddStudentValue.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnAddStudentValue.Location = new System.Drawing.Point(30, 257);
+            this.btnAddStudentValue.Location = new System.Drawing.Point(28, 330);
+            this.btnAddStudentValue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddStudentValue.Name = "btnAddStudentValue";
-            this.btnAddStudentValue.Size = new System.Drawing.Size(178, 33);
+            this.btnAddStudentValue.Size = new System.Drawing.Size(267, 50);
             this.btnAddStudentValue.TabIndex = 8;
             this.btnAddStudentValue.Text = "加入學生資料";
             this.btnAddStudentValue.UseVisualStyleBackColor = true;
@@ -134,9 +143,10 @@
             // btnRadomSave
             // 
             this.btnRadomSave.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnRadomSave.Location = new System.Drawing.Point(30, 307);
+            this.btnRadomSave.Location = new System.Drawing.Point(28, 404);
+            this.btnRadomSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRadomSave.Name = "btnRadomSave";
-            this.btnRadomSave.Size = new System.Drawing.Size(178, 33);
+            this.btnRadomSave.Size = new System.Drawing.Size(267, 50);
             this.btnRadomSave.TabIndex = 9;
             this.btnRadomSave.Text = "隨機儲存資料";
             this.btnRadomSave.UseVisualStyleBackColor = true;
@@ -147,9 +157,10 @@
             this.btnAddUpScore.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnAddUpScore.Enabled = false;
             this.btnAddUpScore.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnAddUpScore.Location = new System.Drawing.Point(30, 358);
+            this.btnAddUpScore.Location = new System.Drawing.Point(28, 481);
+            this.btnAddUpScore.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddUpScore.Name = "btnAddUpScore";
-            this.btnAddUpScore.Size = new System.Drawing.Size(178, 33);
+            this.btnAddUpScore.Size = new System.Drawing.Size(267, 50);
             this.btnAddUpScore.TabIndex = 10;
             this.btnAddUpScore.Text = "各科統計";
             this.btnAddUpScore.UseVisualStyleBackColor = true;
@@ -158,9 +169,10 @@
             // btnRefreshScoreList
             // 
             this.btnRefreshScoreList.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnRefreshScoreList.Location = new System.Drawing.Point(30, 447);
+            this.btnRefreshScoreList.Location = new System.Drawing.Point(30, 565);
+            this.btnRefreshScoreList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRefreshScoreList.Name = "btnRefreshScoreList";
-            this.btnRefreshScoreList.Size = new System.Drawing.Size(178, 33);
+            this.btnRefreshScoreList.Size = new System.Drawing.Size(267, 50);
             this.btnRefreshScoreList.TabIndex = 11;
             this.btnRefreshScoreList.Text = "重設所有資料";
             this.btnRefreshScoreList.UseVisualStyleBackColor = true;
@@ -169,9 +181,10 @@
             // btnRadomSave20
             // 
             this.btnRadomSave20.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnRadomSave20.Location = new System.Drawing.Point(30, 495);
+            this.btnRadomSave20.Location = new System.Drawing.Point(30, 637);
+            this.btnRadomSave20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRadomSave20.Name = "btnRadomSave20";
-            this.btnRadomSave20.Size = new System.Drawing.Size(178, 33);
+            this.btnRadomSave20.Size = new System.Drawing.Size(267, 50);
             this.btnRadomSave20.TabIndex = 12;
             this.btnRadomSave20.Text = "隨機加入20筆資料";
             this.btnRadomSave20.UseVisualStyleBackColor = true;
@@ -181,11 +194,12 @@
             // 
             this.rTxtScoreList.BackColor = System.Drawing.SystemColors.Control;
             this.rTxtScoreList.Font = new System.Drawing.Font("標楷體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.rTxtScoreList.Location = new System.Drawing.Point(247, 22);
+            this.rTxtScoreList.Location = new System.Drawing.Point(336, 24);
+            this.rTxtScoreList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rTxtScoreList.Name = "rTxtScoreList";
             this.rTxtScoreList.ReadOnly = true;
             this.rTxtScoreList.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.rTxtScoreList.Size = new System.Drawing.Size(565, 373);
+            this.rTxtScoreList.Size = new System.Drawing.Size(754, 513);
             this.rTxtScoreList.TabIndex = 15;
             this.rTxtScoreList.Text = "姓名         國文     數學     英文     總分     平均     最高     最低\n";
             // 
@@ -193,19 +207,20 @@
             // 
             this.rTxtShowAll.BackColor = System.Drawing.SystemColors.Control;
             this.rTxtShowAll.Font = new System.Drawing.Font("標楷體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.rTxtShowAll.Location = new System.Drawing.Point(247, 417);
+            this.rTxtShowAll.Location = new System.Drawing.Point(336, 565);
+            this.rTxtShowAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rTxtShowAll.Name = "rTxtShowAll";
             this.rTxtShowAll.ReadOnly = true;
             this.rTxtShowAll.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.rTxtShowAll.Size = new System.Drawing.Size(565, 111);
+            this.rTxtShowAll.Size = new System.Drawing.Size(754, 122);
             this.rTxtShowAll.TabIndex = 16;
             this.rTxtShowAll.Text = "";
             // 
             // Frm_StudentGrade_H05_List
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(848, 565);
+            this.ClientSize = new System.Drawing.Size(1160, 734);
             this.Controls.Add(this.rTxtShowAll);
             this.Controls.Add(this.rTxtScoreList);
             this.Controls.Add(this.btnRadomSave20);
@@ -221,7 +236,9 @@
             this.Controls.Add(this.labMath);
             this.Controls.Add(this.labChi);
             this.Controls.Add(this.labName);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Frm_StudentGrade_H05_List";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Frm_StudentGrade_H05_List";
             this.ResumeLayout(false);
             this.PerformLayout();

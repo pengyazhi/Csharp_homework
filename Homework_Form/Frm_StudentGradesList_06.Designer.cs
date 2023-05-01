@@ -54,12 +54,12 @@
             // 
             this.rTxtShowAll.BackColor = System.Drawing.SystemColors.Control;
             this.rTxtShowAll.Font = new System.Drawing.Font("標楷體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.rTxtShowAll.Location = new System.Drawing.Point(352, 657);
+            this.rTxtShowAll.Location = new System.Drawing.Point(323, 455);
             this.rTxtShowAll.Margin = new System.Windows.Forms.Padding(4);
             this.rTxtShowAll.Name = "rTxtShowAll";
             this.rTxtShowAll.ReadOnly = true;
             this.rTxtShowAll.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.rTxtShowAll.Size = new System.Drawing.Size(846, 164);
+            this.rTxtShowAll.Size = new System.Drawing.Size(768, 149);
             this.rTxtShowAll.TabIndex = 31;
             this.rTxtShowAll.Text = "";
             // 
@@ -67,31 +67,32 @@
             // 
             this.rTxtScoreList.BackColor = System.Drawing.SystemColors.Control;
             this.rTxtScoreList.Font = new System.Drawing.Font("標楷體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.rTxtScoreList.Location = new System.Drawing.Point(352, 64);
+            this.rTxtScoreList.Location = new System.Drawing.Point(323, 33);
             this.rTxtScoreList.Margin = new System.Windows.Forms.Padding(4);
             this.rTxtScoreList.Name = "rTxtScoreList";
             this.rTxtScoreList.ReadOnly = true;
             this.rTxtScoreList.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.rTxtScoreList.Size = new System.Drawing.Size(846, 558);
+            this.rTxtScoreList.Size = new System.Drawing.Size(768, 404);
             this.rTxtScoreList.TabIndex = 30;
             this.rTxtScoreList.Text = "姓名         國文     數學     英文     總分     平均     最高     最低\n";
             // 
             // btnSearchChiScore
             // 
             this.btnSearchChiScore.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnSearchChiScore.Location = new System.Drawing.Point(69, 828);
+            this.btnSearchChiScore.Location = new System.Drawing.Point(67, 635);
             this.btnSearchChiScore.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchChiScore.Name = "btnSearchChiScore";
             this.btnSearchChiScore.Size = new System.Drawing.Size(160, 38);
             this.btnSearchChiScore.TabIndex = 29;
             this.btnSearchChiScore.Text = "SEARCH";
             this.btnSearchChiScore.UseVisualStyleBackColor = true;
+            this.btnSearchChiScore.Click += new System.EventHandler(this.btnSearchChiScore_Click);
             // 
             // btnRefreshScoreList
             // 
             this.btnRefreshScoreList.Enabled = false;
             this.btnRefreshScoreList.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnRefreshScoreList.Location = new System.Drawing.Point(27, 642);
+            this.btnRefreshScoreList.Location = new System.Drawing.Point(29, 445);
             this.btnRefreshScoreList.Margin = new System.Windows.Forms.Padding(4);
             this.btnRefreshScoreList.Name = "btnRefreshScoreList";
             this.btnRefreshScoreList.Size = new System.Drawing.Size(267, 50);
@@ -105,7 +106,7 @@
             this.btnRemoveAtValue.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnRemoveAtValue.Enabled = false;
             this.btnRemoveAtValue.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnRemoveAtValue.Location = new System.Drawing.Point(27, 568);
+            this.btnRemoveAtValue.Location = new System.Drawing.Point(29, 387);
             this.btnRemoveAtValue.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoveAtValue.Name = "btnRemoveAtValue";
             this.btnRemoveAtValue.Size = new System.Drawing.Size(267, 50);
@@ -117,7 +118,7 @@
             // btnInsertValue
             // 
             this.btnInsertValue.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnInsertValue.Location = new System.Drawing.Point(27, 492);
+            this.btnInsertValue.Location = new System.Drawing.Point(29, 329);
             this.btnInsertValue.Margin = new System.Windows.Forms.Padding(4);
             this.btnInsertValue.Name = "btnInsertValue";
             this.btnInsertValue.Size = new System.Drawing.Size(267, 50);
@@ -129,7 +130,7 @@
             // btnAddStudentValue
             // 
             this.btnAddStudentValue.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnAddStudentValue.Location = new System.Drawing.Point(27, 417);
+            this.btnAddStudentValue.Location = new System.Drawing.Point(29, 271);
             this.btnAddStudentValue.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddStudentValue.Name = "btnAddStudentValue";
             this.btnAddStudentValue.Size = new System.Drawing.Size(267, 50);
@@ -141,7 +142,7 @@
             // txtEngScore
             // 
             this.txtEngScore.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtEngScore.Location = new System.Drawing.Point(130, 318);
+            this.txtEngScore.Location = new System.Drawing.Point(132, 221);
             this.txtEngScore.Margin = new System.Windows.Forms.Padding(4);
             this.txtEngScore.MaxLength = 3;
             this.txtEngScore.Name = "txtEngScore";
@@ -151,7 +152,7 @@
             // txtMathScore
             // 
             this.txtMathScore.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtMathScore.Location = new System.Drawing.Point(130, 230);
+            this.txtMathScore.Location = new System.Drawing.Point(132, 159);
             this.txtMathScore.Margin = new System.Windows.Forms.Padding(4);
             this.txtMathScore.MaxLength = 3;
             this.txtMathScore.Name = "txtMathScore";
@@ -161,7 +162,7 @@
             // txtChiScore
             // 
             this.txtChiScore.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtChiScore.Location = new System.Drawing.Point(130, 147);
+            this.txtChiScore.Location = new System.Drawing.Point(132, 97);
             this.txtChiScore.Margin = new System.Windows.Forms.Padding(4);
             this.txtChiScore.MaxLength = 3;
             this.txtChiScore.Name = "txtChiScore";
@@ -171,7 +172,7 @@
             // txtStudentName
             // 
             this.txtStudentName.Font = new System.Drawing.Font("新細明體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtStudentName.Location = new System.Drawing.Point(130, 64);
+            this.txtStudentName.Location = new System.Drawing.Point(132, 33);
             this.txtStudentName.Margin = new System.Windows.Forms.Padding(4);
             this.txtStudentName.Name = "txtStudentName";
             this.txtStudentName.Size = new System.Drawing.Size(162, 42);
@@ -181,7 +182,7 @@
             // 
             this.labEng.AutoSize = true;
             this.labEng.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labEng.Location = new System.Drawing.Point(21, 322);
+            this.labEng.Location = new System.Drawing.Point(23, 221);
             this.labEng.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labEng.Name = "labEng";
             this.labEng.Size = new System.Drawing.Size(102, 36);
@@ -192,7 +193,7 @@
             // 
             this.labMath.AutoSize = true;
             this.labMath.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labMath.Location = new System.Drawing.Point(21, 238);
+            this.labMath.Location = new System.Drawing.Point(23, 159);
             this.labMath.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labMath.Name = "labMath";
             this.labMath.Size = new System.Drawing.Size(102, 36);
@@ -203,7 +204,7 @@
             // 
             this.labChi.AutoSize = true;
             this.labChi.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labChi.Location = new System.Drawing.Point(21, 153);
+            this.labChi.Location = new System.Drawing.Point(23, 103);
             this.labChi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labChi.Name = "labChi";
             this.labChi.Size = new System.Drawing.Size(102, 36);
@@ -214,7 +215,7 @@
             // 
             this.labName.AutoSize = true;
             this.labName.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labName.Location = new System.Drawing.Point(21, 74);
+            this.labName.Location = new System.Drawing.Point(23, 43);
             this.labName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labName.Name = "labName";
             this.labName.Size = new System.Drawing.Size(102, 36);
@@ -225,7 +226,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(49, 710);
+            this.label1.Location = new System.Drawing.Point(47, 517);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(211, 30);
             this.label1.TabIndex = 32;
@@ -235,7 +236,7 @@
             // 
             this.txtLowerScore.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtLowerScore.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txtLowerScore.Location = new System.Drawing.Point(53, 762);
+            this.txtLowerScore.Location = new System.Drawing.Point(61, 568);
             this.txtLowerScore.MaxLength = 3;
             this.txtLowerScore.Name = "txtLowerScore";
             this.txtLowerScore.Size = new System.Drawing.Size(70, 45);
@@ -249,7 +250,7 @@
             // 
             this.txtHigerScore.Font = new System.Drawing.Font("微軟正黑體", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtHigerScore.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.txtHigerScore.Location = new System.Drawing.Point(175, 762);
+            this.txtHigerScore.Location = new System.Drawing.Point(173, 569);
             this.txtHigerScore.Name = "txtHigerScore";
             this.txtHigerScore.Size = new System.Drawing.Size(70, 45);
             this.txtHigerScore.TabIndex = 34;
@@ -262,7 +263,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.Location = new System.Drawing.Point(139, 773);
+            this.label2.Location = new System.Drawing.Point(137, 580);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(22, 24);
             this.label2.TabIndex = 35;
@@ -273,7 +274,7 @@
             this.btnAddUpScore.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnAddUpScore.Enabled = false;
             this.btnAddUpScore.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnAddUpScore.Location = new System.Drawing.Point(931, 847);
+            this.btnAddUpScore.Location = new System.Drawing.Point(824, 612);
             this.btnAddUpScore.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddUpScore.Name = "btnAddUpScore";
             this.btnAddUpScore.Size = new System.Drawing.Size(267, 50);
@@ -286,7 +287,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1222, 910);
+            this.ClientSize = new System.Drawing.Size(1143, 712);
             this.Controls.Add(this.btnAddUpScore);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtHigerScore);

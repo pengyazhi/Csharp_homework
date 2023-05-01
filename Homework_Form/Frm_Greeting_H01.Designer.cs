@@ -47,9 +47,10 @@
             this.labName.BackColor = System.Drawing.Color.Transparent;
             this.labName.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labName.ForeColor = System.Drawing.Color.Chocolate;
-            this.labName.Location = new System.Drawing.Point(61, 44);
+            this.labName.Location = new System.Drawing.Point(92, 66);
+            this.labName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labName.Name = "labName";
-            this.labName.Size = new System.Drawing.Size(86, 31);
+            this.labName.Size = new System.Drawing.Size(128, 46);
             this.labName.TabIndex = 0;
             this.labName.Text = "姓名：";
             // 
@@ -59,9 +60,10 @@
             this.labEnglsihName.BackColor = System.Drawing.Color.Transparent;
             this.labEnglsihName.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labEnglsihName.ForeColor = System.Drawing.Color.Chocolate;
-            this.labEnglsihName.Location = new System.Drawing.Point(61, 103);
+            this.labEnglsihName.Location = new System.Drawing.Point(92, 154);
+            this.labEnglsihName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labEnglsihName.Name = "labEnglsihName";
-            this.labEnglsihName.Size = new System.Drawing.Size(198, 31);
+            this.labEnglsihName.Size = new System.Drawing.Size(296, 46);
             this.labEnglsihName.TabIndex = 1;
             this.labEnglsihName.Text = "Englsih Name：";
             // 
@@ -71,9 +73,10 @@
             this.btnSex.BackColor = System.Drawing.Color.Transparent;
             this.btnSex.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnSex.ForeColor = System.Drawing.Color.Chocolate;
-            this.btnSex.Location = new System.Drawing.Point(61, 155);
+            this.btnSex.Location = new System.Drawing.Point(92, 232);
+            this.btnSex.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnSex.Name = "btnSex";
-            this.btnSex.Size = new System.Drawing.Size(86, 31);
+            this.btnSex.Size = new System.Drawing.Size(128, 46);
             this.btnSex.TabIndex = 2;
             this.btnSex.Text = "性別：";
             // 
@@ -83,42 +86,47 @@
             this.labStarSign.BackColor = System.Drawing.Color.Transparent;
             this.labStarSign.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labStarSign.ForeColor = System.Drawing.Color.Chocolate;
-            this.labStarSign.Location = new System.Drawing.Point(61, 208);
+            this.labStarSign.Location = new System.Drawing.Point(92, 312);
+            this.labStarSign.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labStarSign.Name = "labStarSign";
-            this.labStarSign.Size = new System.Drawing.Size(86, 31);
+            this.labStarSign.Size = new System.Drawing.Size(128, 46);
             this.labStarSign.TabIndex = 3;
             this.labStarSign.Text = "星座：";
             // 
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtName.Location = new System.Drawing.Point(276, 40);
+            this.txtName.Location = new System.Drawing.Point(414, 60);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(171, 35);
+            this.txtName.Size = new System.Drawing.Size(254, 49);
             this.txtName.TabIndex = 4;
             // 
             // txtEnglishName
             // 
             this.txtEnglishName.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtEnglishName.Location = new System.Drawing.Point(276, 99);
+            this.txtEnglishName.Location = new System.Drawing.Point(414, 148);
+            this.txtEnglishName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEnglishName.Name = "txtEnglishName";
-            this.txtEnglishName.Size = new System.Drawing.Size(171, 35);
+            this.txtEnglishName.Size = new System.Drawing.Size(254, 49);
             this.txtEnglishName.TabIndex = 5;
             // 
             // txtSex
             // 
             this.txtSex.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtSex.Location = new System.Drawing.Point(276, 151);
+            this.txtSex.Location = new System.Drawing.Point(414, 226);
+            this.txtSex.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSex.Name = "txtSex";
-            this.txtSex.Size = new System.Drawing.Size(171, 35);
+            this.txtSex.Size = new System.Drawing.Size(254, 49);
             this.txtSex.TabIndex = 6;
             // 
             // txtStarSign
             // 
             this.txtStarSign.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtStarSign.Location = new System.Drawing.Point(276, 204);
+            this.txtStarSign.Location = new System.Drawing.Point(414, 306);
+            this.txtStarSign.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtStarSign.Name = "txtStarSign";
-            this.txtStarSign.Size = new System.Drawing.Size(171, 35);
+            this.txtStarSign.Size = new System.Drawing.Size(254, 49);
             this.txtStarSign.TabIndex = 7;
             // 
             // btnSayHi
@@ -127,9 +135,10 @@
             this.btnSayHi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSayHi.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSayHi.ForeColor = System.Drawing.Color.Salmon;
-            this.btnSayHi.Location = new System.Drawing.Point(555, 65);
+            this.btnSayHi.Location = new System.Drawing.Point(832, 98);
+            this.btnSayHi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSayHi.Name = "btnSayHi";
-            this.btnSayHi.Size = new System.Drawing.Size(162, 60);
+            this.btnSayHi.Size = new System.Drawing.Size(243, 90);
             this.btnSayHi.TabIndex = 8;
             this.btnSayHi.Text = "Say Hi !";
             this.btnSayHi.UseVisualStyleBackColor = false;
@@ -141,21 +150,22 @@
             this.btnSayHello.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSayHello.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSayHello.ForeColor = System.Drawing.Color.Salmon;
-            this.btnSayHello.Location = new System.Drawing.Point(555, 155);
+            this.btnSayHello.Location = new System.Drawing.Point(832, 232);
+            this.btnSayHello.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSayHello.Name = "btnSayHello";
-            this.btnSayHello.Size = new System.Drawing.Size(162, 60);
+            this.btnSayHello.Size = new System.Drawing.Size(243, 90);
             this.btnSayHello.TabIndex = 9;
             this.btnSayHello.Text = "Say Hello !";
             this.btnSayHello.UseVisualStyleBackColor = false;
             this.btnSayHello.Click += new System.EventHandler(this.btnSayHello_Click);
             // 
-            // frm_Greeting
+            // Frm_Greeting_H01
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 675);
             this.Controls.Add(this.btnSayHello);
             this.Controls.Add(this.btnSayHi);
             this.Controls.Add(this.txtStarSign);
@@ -167,7 +177,8 @@
             this.Controls.Add(this.labEnglsihName);
             this.Controls.Add(this.labName);
             this.DoubleBuffered = true;
-            this.Name = "frm_Greeting";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "Frm_Greeting_H01";
             this.Text = "Greeting";
             this.ResumeLayout(false);
             this.PerformLayout();

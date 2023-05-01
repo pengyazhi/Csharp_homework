@@ -143,6 +143,9 @@ namespace Homework_Form
                    + string.Format("{0,-7}{1,8:n1}{2,9:n1}{3,9:n1}", "平均", ss.ChiTotalScore / ssl.Count, ss.MathTotalScore / ssl.Count, ss.EngTotalScore / ssl.Count) + "\n"
                    + string.Format("{0,-6}{1,8:n0}{2,9:n0}{3,9:n0}", "最高分", ss.ChiMaxScore, ss.MathMaxScore, ss.EngMaxScore) + "\n"
                    +string.Format("{0,-6}{1,8:n0}{2,9:n0}{3,9:n0}", "最低分", ss.ChiMinScore, ss.MathMinScore, ss.EngMinScore) ;
+            ss.ChiTotalScore = 0;
+            ss.MathTotalScore = 0;
+            ss.EngTotalScore = 0;
             btnAddStudentValue.Enabled = false;
             btnRadomSave.Enabled = false;
             btnAddUpScore.Enabled = false;

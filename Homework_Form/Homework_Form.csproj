@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Frm_Claculate_H07.cs">
+    <Compile Include="Frm_Calculator_H07.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Claculate_H07.Designer.cs">
-      <DependentUpon>Frm_Claculate_H07.cs</DependentUpon>
+    <Compile Include="Frm_Calculator_H07.Designer.cs">
+      <DependentUpon>Frm_Calculator_H07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_H08_ForDoWhileMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_H08_ForDoWhileMethod.Designer.cs">
+      <DependentUpon>Frm_H08_ForDoWhileMethod.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_StudentGradesList_06.cs">
       <SubType>Form</SubType>
@@ -103,8 +109,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility.cs" />
-    <EmbeddedResource Include="Frm_Claculate_H07.resx">
-      <DependentUpon>Frm_Claculate_H07.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_Calculator_H07.resx">
+      <DependentUpon>Frm_Calculator_H07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_H08_ForDoWhileMethod.resx">
+      <DependentUpon>Frm_H08_ForDoWhileMethod.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_StudentGradesList_06.resx">
       <DependentUpon>Frm_StudentGradesList_06.cs</DependentUpon>

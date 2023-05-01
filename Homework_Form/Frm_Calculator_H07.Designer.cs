@@ -1,6 +1,6 @@
 ﻿namespace Homework_Form
 {
-    partial class Frm_Claculate_H07
+    partial class Frm_Calculator_H07
     {
         /// <summary>
         /// Required designer variable.
