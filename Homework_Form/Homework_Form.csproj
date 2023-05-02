@@ -52,6 +52,18 @@
     <Compile Include="Frm_Calculator_H07.Designer.cs">
       <DependentUpon>Frm_Calculator_H07.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Guess_Enter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Guess_Enter.Designer.cs">
+      <DependentUpon>Frm_Guess_Enter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Guess_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Guess_Test.Designer.cs">
+      <DependentUpon>Frm_Guess_Test.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_H08_ForDoWhileMethod.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +123,12 @@
     <Compile Include="Utility.cs" />
     <EmbeddedResource Include="Frm_Calculator_H07.resx">
       <DependentUpon>Frm_Calculator_H07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Guess_Enter.resx">
+      <DependentUpon>Frm_Guess_Enter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Guess_Test.resx">
+      <DependentUpon>Frm_Guess_Test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_H08_ForDoWhileMethod.resx">
       <DependentUpon>Frm_H08_ForDoWhileMethod.cs</DependentUpon>

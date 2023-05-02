@@ -81,9 +81,10 @@
             // 
             btnRefresh.BackColor = System.Drawing.Color.LightCoral;
             btnRefresh.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            btnRefresh.Location = new System.Drawing.Point(172, 210);
+            btnRefresh.Location = new System.Drawing.Point(115, 140);
+            btnRefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new System.Drawing.Size(103, 132);
+            btnRefresh.Size = new System.Drawing.Size(69, 88);
             btnRefresh.TabIndex = 4;
             btnRefresh.Text = "清空結果欄";
             btnRefresh.UseVisualStyleBackColor = false;
@@ -95,18 +96,21 @@
             this.gBoxOddEven.Controls.Add(this.labNumber);
             this.gBoxOddEven.Controls.Add(this.txtOddEven);
             this.gBoxOddEven.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.gBoxOddEven.Location = new System.Drawing.Point(21, 27);
+            this.gBoxOddEven.Location = new System.Drawing.Point(14, 18);
+            this.gBoxOddEven.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gBoxOddEven.Name = "gBoxOddEven";
-            this.gBoxOddEven.Size = new System.Drawing.Size(150, 166);
+            this.gBoxOddEven.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gBoxOddEven.Size = new System.Drawing.Size(100, 111);
             this.gBoxOddEven.TabIndex = 0;
             this.gBoxOddEven.TabStop = false;
             this.gBoxOddEven.Text = "奇數偶數";
             // 
             // btnOddEven
             // 
-            this.btnOddEven.Location = new System.Drawing.Point(6, 85);
+            this.btnOddEven.Location = new System.Drawing.Point(4, 57);
+            this.btnOddEven.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOddEven.Name = "btnOddEven";
-            this.btnOddEven.Size = new System.Drawing.Size(134, 66);
+            this.btnOddEven.Size = new System.Drawing.Size(89, 44);
             this.btnOddEven.TabIndex = 2;
             this.btnOddEven.Text = "輸入的數為奇數還是偶數?";
             this.btnOddEven.UseVisualStyleBackColor = true;
@@ -115,17 +119,19 @@
             // labNumber
             // 
             this.labNumber.AutoSize = true;
-            this.labNumber.Location = new System.Drawing.Point(34, 25);
+            this.labNumber.Location = new System.Drawing.Point(23, 17);
+            this.labNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labNumber.Name = "labNumber";
-            this.labNumber.Size = new System.Drawing.Size(85, 23);
+            this.labNumber.Size = new System.Drawing.Size(57, 16);
             this.labNumber.TabIndex = 1;
             this.labNumber.Text = "Number:";
             // 
             // txtOddEven
             // 
-            this.txtOddEven.Location = new System.Drawing.Point(36, 50);
+            this.txtOddEven.Location = new System.Drawing.Point(24, 33);
+            this.txtOddEven.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtOddEven.Name = "txtOddEven";
-            this.txtOddEven.Size = new System.Drawing.Size(79, 31);
+            this.txtOddEven.Size = new System.Drawing.Size(54, 23);
             this.txtOddEven.TabIndex = 0;
             // 
             // groupBox1
@@ -133,18 +139,21 @@
             this.groupBox1.Controls.Add(this.btnMaxMin);
             this.groupBox1.Controls.Add(this.btnNumOfOddEven);
             this.groupBox1.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox1.Location = new System.Drawing.Point(191, 27);
+            this.groupBox1.Location = new System.Drawing.Point(127, 18);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(168, 166);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(112, 111);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "陣列arr0711[]";
             // 
             // btnMaxMin
             // 
-            this.btnMaxMin.Location = new System.Drawing.Point(6, 40);
+            this.btnMaxMin.Location = new System.Drawing.Point(4, 27);
+            this.btnMaxMin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMaxMin.Name = "btnMaxMin";
-            this.btnMaxMin.Size = new System.Drawing.Size(134, 39);
+            this.btnMaxMin.Size = new System.Drawing.Size(89, 26);
             this.btnMaxMin.TabIndex = 3;
             this.btnMaxMin.Text = "最大/小值";
             this.btnMaxMin.UseVisualStyleBackColor = true;
@@ -152,9 +161,10 @@
             // 
             // btnNumOfOddEven
             // 
-            this.btnNumOfOddEven.Location = new System.Drawing.Point(6, 85);
+            this.btnNumOfOddEven.Location = new System.Drawing.Point(4, 57);
+            this.btnNumOfOddEven.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNumOfOddEven.Name = "btnNumOfOddEven";
-            this.btnNumOfOddEven.Size = new System.Drawing.Size(134, 66);
+            this.btnNumOfOddEven.Size = new System.Drawing.Size(89, 44);
             this.btnNumOfOddEven.TabIndex = 2;
             this.btnNumOfOddEven.Text = "統計奇數偶數個數";
             this.btnNumOfOddEven.UseVisualStyleBackColor = true;
@@ -165,18 +175,21 @@
             this.groupBox2.Controls.Add(this.btnLongestName);
             this.groupBox2.Controls.Add(this.btnContainCc);
             this.groupBox2.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox2.Location = new System.Drawing.Point(380, 27);
+            this.groupBox2.Location = new System.Drawing.Point(253, 18);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(150, 166);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(100, 111);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "陣列String[]arr";
             // 
             // btnLongestName
             // 
-            this.btnLongestName.Location = new System.Drawing.Point(6, 40);
+            this.btnLongestName.Location = new System.Drawing.Point(4, 27);
+            this.btnLongestName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLongestName.Name = "btnLongestName";
-            this.btnLongestName.Size = new System.Drawing.Size(134, 39);
+            this.btnLongestName.Size = new System.Drawing.Size(89, 26);
             this.btnLongestName.TabIndex = 3;
             this.btnLongestName.Text = "最長的名字";
             this.btnLongestName.UseVisualStyleBackColor = true;
@@ -184,9 +197,10 @@
             // 
             // btnContainCc
             // 
-            this.btnContainCc.Location = new System.Drawing.Point(6, 85);
+            this.btnContainCc.Location = new System.Drawing.Point(4, 57);
+            this.btnContainCc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnContainCc.Name = "btnContainCc";
-            this.btnContainCc.Size = new System.Drawing.Size(134, 66);
+            this.btnContainCc.Size = new System.Drawing.Size(89, 44);
             this.btnContainCc.TabIndex = 2;
             this.btnContainCc.Text = "包含\"C\"or\"c\"的名字有幾個";
             this.btnContainCc.UseVisualStyleBackColor = true;
@@ -198,18 +212,21 @@
             this.groupBox3.Controls.Add(this.btnInsideOne);
             this.groupBox3.Controls.Add(this.btnOutsideOne);
             this.groupBox3.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox3.Location = new System.Drawing.Point(551, 27);
+            this.groupBox3.Location = new System.Drawing.Point(367, 18);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(157, 166);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(105, 111);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "[10,10]二維陣列";
             // 
             // btnTen
             // 
-            this.btnTen.Location = new System.Drawing.Point(6, 121);
+            this.btnTen.Location = new System.Drawing.Point(4, 81);
+            this.btnTen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTen.Name = "btnTen";
-            this.btnTen.Size = new System.Drawing.Size(134, 39);
+            this.btnTen.Size = new System.Drawing.Size(89, 26);
             this.btnTen.TabIndex = 5;
             this.btnTen.Text = "10101010...";
             this.btnTen.UseVisualStyleBackColor = true;
@@ -217,9 +234,10 @@
             // 
             // btnInsideOne
             // 
-            this.btnInsideOne.Location = new System.Drawing.Point(6, 75);
+            this.btnInsideOne.Location = new System.Drawing.Point(4, 50);
+            this.btnInsideOne.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnInsideOne.Name = "btnInsideOne";
-            this.btnInsideOne.Size = new System.Drawing.Size(134, 39);
+            this.btnInsideOne.Size = new System.Drawing.Size(89, 26);
             this.btnInsideOne.TabIndex = 4;
             this.btnInsideOne.Text = "邊0內1";
             this.btnInsideOne.UseVisualStyleBackColor = true;
@@ -227,9 +245,10 @@
             // 
             // btnOutsideOne
             // 
-            this.btnOutsideOne.Location = new System.Drawing.Point(6, 30);
+            this.btnOutsideOne.Location = new System.Drawing.Point(4, 20);
+            this.btnOutsideOne.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOutsideOne.Name = "btnOutsideOne";
-            this.btnOutsideOne.Size = new System.Drawing.Size(134, 39);
+            this.btnOutsideOne.Size = new System.Drawing.Size(89, 26);
             this.btnOutsideOne.TabIndex = 3;
             this.btnOutsideOne.Text = "邊1內0";
             this.btnOutsideOne.UseVisualStyleBackColor = true;
@@ -241,18 +260,21 @@
             this.groupBox4.Controls.Add(this.btnbtnMaxArr2);
             this.groupBox4.Controls.Add(this.btnSumArr2);
             this.groupBox4.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox4.Location = new System.Drawing.Point(729, 27);
+            this.groupBox4.Location = new System.Drawing.Point(486, 18);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(172, 166);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Size = new System.Drawing.Size(115, 111);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "陣列arr0711[]";
             // 
             // btnMinArr2
             // 
-            this.btnMinArr2.Location = new System.Drawing.Point(16, 121);
+            this.btnMinArr2.Location = new System.Drawing.Point(11, 81);
+            this.btnMinArr2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMinArr2.Name = "btnMinArr2";
-            this.btnMinArr2.Size = new System.Drawing.Size(134, 39);
+            this.btnMinArr2.Size = new System.Drawing.Size(89, 26);
             this.btnMinArr2.TabIndex = 5;
             this.btnMinArr2.Text = "MIN";
             this.btnMinArr2.UseVisualStyleBackColor = true;
@@ -260,9 +282,10 @@
             // 
             // btnbtnMaxArr2
             // 
-            this.btnbtnMaxArr2.Location = new System.Drawing.Point(16, 75);
+            this.btnbtnMaxArr2.Location = new System.Drawing.Point(11, 50);
+            this.btnbtnMaxArr2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnbtnMaxArr2.Name = "btnbtnMaxArr2";
-            this.btnbtnMaxArr2.Size = new System.Drawing.Size(134, 39);
+            this.btnbtnMaxArr2.Size = new System.Drawing.Size(89, 26);
             this.btnbtnMaxArr2.TabIndex = 4;
             this.btnbtnMaxArr2.Text = "MAX";
             this.btnbtnMaxArr2.UseVisualStyleBackColor = true;
@@ -270,9 +293,10 @@
             // 
             // btnSumArr2
             // 
-            this.btnSumArr2.Location = new System.Drawing.Point(16, 30);
+            this.btnSumArr2.Location = new System.Drawing.Point(11, 20);
+            this.btnSumArr2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSumArr2.Name = "btnSumArr2";
-            this.btnSumArr2.Size = new System.Drawing.Size(134, 39);
+            this.btnSumArr2.Size = new System.Drawing.Size(89, 26);
             this.btnSumArr2.TabIndex = 3;
             this.btnSumArr2.Text = "SUM";
             this.btnSumArr2.UseVisualStyleBackColor = true;
@@ -281,9 +305,10 @@
             // btnSwap
             // 
             this.btnSwap.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnSwap.Location = new System.Drawing.Point(907, 36);
+            this.btnSwap.Location = new System.Drawing.Point(605, 24);
+            this.btnSwap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSwap.Name = "btnSwap";
-            this.btnSwap.Size = new System.Drawing.Size(152, 39);
+            this.btnSwap.Size = new System.Drawing.Size(101, 26);
             this.btnSwap.TabIndex = 6;
             this.btnSwap.Text = "SWAP[int,int]";
             this.btnSwap.UseVisualStyleBackColor = true;
@@ -295,18 +320,21 @@
             this.groupBox5.Controls.Add(this.label1);
             this.groupBox5.Controls.Add(this.txtRowMaxsTree);
             this.groupBox5.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox5.Location = new System.Drawing.Point(35, 210);
+            this.groupBox5.Location = new System.Drawing.Point(23, 140);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(119, 132);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Size = new System.Drawing.Size(79, 88);
             this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "直角聖誕樹";
             // 
             // btnShowTree
             // 
-            this.btnShowTree.Location = new System.Drawing.Point(18, 87);
+            this.btnShowTree.Location = new System.Drawing.Point(12, 58);
+            this.btnShowTree.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnShowTree.Name = "btnShowTree";
-            this.btnShowTree.Size = new System.Drawing.Size(78, 35);
+            this.btnShowTree.Size = new System.Drawing.Size(52, 23);
             this.btnShowTree.TabIndex = 2;
             this.btnShowTree.Text = "Show";
             this.btnShowTree.UseVisualStyleBackColor = true;
@@ -315,25 +343,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 24);
+            this.label1.Location = new System.Drawing.Point(21, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 23);
+            this.label1.Size = new System.Drawing.Size(35, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Row:";
             // 
             // txtRowMaxsTree
             // 
-            this.txtRowMaxsTree.Location = new System.Drawing.Point(17, 50);
+            this.txtRowMaxsTree.Location = new System.Drawing.Point(11, 33);
+            this.txtRowMaxsTree.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRowMaxsTree.Name = "txtRowMaxsTree";
-            this.txtRowMaxsTree.Size = new System.Drawing.Size(79, 31);
+            this.txtRowMaxsTree.Size = new System.Drawing.Size(54, 23);
             this.txtRowMaxsTree.TabIndex = 0;
             // 
             // btnBinary
             // 
             this.btnBinary.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnBinary.Location = new System.Drawing.Point(907, 81);
+            this.btnBinary.Location = new System.Drawing.Point(605, 54);
+            this.btnBinary.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBinary.Name = "btnBinary";
-            this.btnBinary.Size = new System.Drawing.Size(152, 39);
+            this.btnBinary.Size = new System.Drawing.Size(101, 26);
             this.btnBinary.TabIndex = 7;
             this.btnBinary.Text = "100的二進位";
             this.btnBinary.UseVisualStyleBackColor = true;
@@ -342,22 +373,26 @@
             // btnLottery
             // 
             this.btnLottery.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnLottery.Location = new System.Drawing.Point(907, 126);
+            this.btnLottery.Location = new System.Drawing.Point(605, 84);
+            this.btnLottery.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLottery.Name = "btnLottery";
-            this.btnLottery.Size = new System.Drawing.Size(152, 39);
+            this.btnLottery.Size = new System.Drawing.Size(101, 26);
             this.btnLottery.TabIndex = 8;
             this.btnLottery.Text = "樂透號碼不重複";
             this.btnLottery.UseVisualStyleBackColor = true;
+            this.btnLottery.Click += new System.EventHandler(this.btnLottery_Click);
             // 
             // btnMultiplicationTable
             // 
             this.btnMultiplicationTable.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnMultiplicationTable.Location = new System.Drawing.Point(907, 171);
+            this.btnMultiplicationTable.Location = new System.Drawing.Point(605, 114);
+            this.btnMultiplicationTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMultiplicationTable.Name = "btnMultiplicationTable";
-            this.btnMultiplicationTable.Size = new System.Drawing.Size(152, 39);
+            this.btnMultiplicationTable.Size = new System.Drawing.Size(101, 26);
             this.btnMultiplicationTable.TabIndex = 9;
             this.btnMultiplicationTable.Text = "九九乘法表";
             this.btnMultiplicationTable.UseVisualStyleBackColor = true;
+            this.btnMultiplicationTable.Click += new System.EventHandler(this.btnMultiplicationTable_Click);
             // 
             // groupBox6
             // 
@@ -371,95 +406,110 @@
             this.groupBox6.Controls.Add(this.label2);
             this.groupBox6.Controls.Add(this.txtFrom);
             this.groupBox6.Font = new System.Drawing.Font("微軟正黑體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox6.Location = new System.Drawing.Point(35, 358);
+            this.groupBox6.Location = new System.Drawing.Point(546, 144);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(240, 159);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Size = new System.Drawing.Size(160, 106);
             this.groupBox6.TabIndex = 4;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "迴圈";
             // 
             // btnDo
             // 
-            this.btnDo.Location = new System.Drawing.Point(157, 106);
+            this.btnDo.Location = new System.Drawing.Point(105, 71);
+            this.btnDo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDo.Name = "btnDo";
-            this.btnDo.Size = new System.Drawing.Size(72, 35);
+            this.btnDo.Size = new System.Drawing.Size(48, 23);
             this.btnDo.TabIndex = 7;
             this.btnDo.Text = "Do";
             this.btnDo.UseVisualStyleBackColor = true;
+            this.btnDo.Click += new System.EventHandler(this.btnDo_Click);
             // 
             // btnWhile
             // 
-            this.btnWhile.Location = new System.Drawing.Point(157, 64);
+            this.btnWhile.Location = new System.Drawing.Point(105, 43);
+            this.btnWhile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnWhile.Name = "btnWhile";
-            this.btnWhile.Size = new System.Drawing.Size(72, 35);
+            this.btnWhile.Size = new System.Drawing.Size(48, 23);
             this.btnWhile.TabIndex = 6;
             this.btnWhile.Text = "While";
             this.btnWhile.UseVisualStyleBackColor = true;
+            this.btnWhile.Click += new System.EventHandler(this.btnWhile_Click);
             // 
             // btnFor
             // 
-            this.btnFor.Location = new System.Drawing.Point(157, 24);
+            this.btnFor.Location = new System.Drawing.Point(105, 16);
+            this.btnFor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnFor.Name = "btnFor";
-            this.btnFor.Size = new System.Drawing.Size(72, 35);
+            this.btnFor.Size = new System.Drawing.Size(48, 23);
             this.btnFor.TabIndex = 2;
             this.btnFor.Text = "For";
             this.btnFor.UseVisualStyleBackColor = true;
+            this.btnFor.Click += new System.EventHandler(this.btnFor_Click);
             // 
             // txtStep
             // 
-            this.txtStep.Location = new System.Drawing.Point(67, 109);
+            this.txtStep.Location = new System.Drawing.Point(45, 73);
+            this.txtStep.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtStep.Name = "txtStep";
-            this.txtStep.Size = new System.Drawing.Size(79, 31);
+            this.txtStep.Size = new System.Drawing.Size(54, 23);
             this.txtStep.TabIndex = 5;
             // 
             // txtTo
             // 
-            this.txtTo.Location = new System.Drawing.Point(69, 67);
+            this.txtTo.Location = new System.Drawing.Point(46, 45);
+            this.txtTo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTo.Name = "txtTo";
-            this.txtTo.Size = new System.Drawing.Size(79, 31);
+            this.txtTo.Size = new System.Drawing.Size(54, 23);
             this.txtTo.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 112);
+            this.label4.Location = new System.Drawing.Point(4, 75);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 23);
+            this.label4.Size = new System.Drawing.Size(36, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Step:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 72);
+            this.label3.Location = new System.Drawing.Point(19, 48);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 23);
+            this.label3.Size = new System.Drawing.Size(25, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "To:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 27);
+            this.label2.Location = new System.Drawing.Point(4, 18);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 23);
+            this.label2.Size = new System.Drawing.Size(39, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "From:";
             // 
             // txtFrom
             // 
-            this.txtFrom.Location = new System.Drawing.Point(67, 24);
+            this.txtFrom.Location = new System.Drawing.Point(45, 16);
+            this.txtFrom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFrom.Name = "txtFrom";
-            this.txtFrom.Size = new System.Drawing.Size(79, 31);
+            this.txtFrom.Size = new System.Drawing.Size(54, 23);
             this.txtFrom.TabIndex = 0;
             // 
             // labResult
             // 
             this.labResult.AutoSize = true;
             this.labResult.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labResult.Location = new System.Drawing.Point(310, 210);
+            this.labResult.Location = new System.Drawing.Point(14, 230);
+            this.labResult.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labResult.Name = "labResult";
-            this.labResult.Size = new System.Drawing.Size(110, 31);
+            this.labResult.Size = new System.Drawing.Size(74, 21);
             this.labResult.TabIndex = 10;
             this.labResult.Text = "Result：";
             // 
@@ -468,17 +518,18 @@
             this.labShowResult.AutoSize = true;
             this.labShowResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.labShowResult.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labShowResult.Location = new System.Drawing.Point(318, 245);
+            this.labShowResult.Location = new System.Drawing.Point(19, 253);
+            this.labShowResult.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labShowResult.Name = "labShowResult";
-            this.labShowResult.Size = new System.Drawing.Size(61, 30);
+            this.labShowResult.Size = new System.Drawing.Size(41, 20);
             this.labShowResult.TabIndex = 11;
             this.labShowResult.Text = "結果";
             // 
             // Frm_H08_ForDoWhileMethod
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1078, 734);
+            this.ClientSize = new System.Drawing.Size(719, 489);
             this.Controls.Add(this.labShowResult);
             this.Controls.Add(this.labResult);
             this.Controls.Add(btnRefresh);
@@ -493,6 +544,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gBoxOddEven);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Frm_H08_ForDoWhileMethod";
             this.Text = "Frm_H08_ForDoWhileMethod";
             this.gBoxOddEven.ResumeLayout(false);
