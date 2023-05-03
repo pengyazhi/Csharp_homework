@@ -5,7 +5,7 @@
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        public System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -26,7 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             this.labShow = new System.Windows.Forms.Label();
             this.btnGuess = new System.Windows.Forms.Button();
@@ -63,6 +63,7 @@
             this.brnShowAns.TabIndex = 2;
             this.brnShowAns.Text = "Show Answer";
             this.brnShowAns.UseVisualStyleBackColor = true;
+            this.brnShowAns.Click += new System.EventHandler(this.brnShowAns_Click);
             // 
             // Frm_Guess_Test
             // 
@@ -80,9 +81,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labShow;
         private System.Windows.Forms.Button btnGuess;
         private System.Windows.Forms.Button brnShowAns;
+        public System.Windows.Forms.Label labShow;
     }
 }
