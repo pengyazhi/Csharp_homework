@@ -41,7 +41,6 @@ namespace Homework_Form
         
         public void checkWin()
         {
-            
             if (checkLine(0, 1, 2) || checkLine(3, 4, 5) || checkLine(6, 7, 8) ||
             checkLine(0, 3, 6) || checkLine(1, 4, 7) || checkLine(2, 5, 8) ||
             checkLine(0, 4, 8) || checkLine(2, 4, 6))
@@ -49,9 +48,9 @@ namespace Homework_Form
                 MessageBox.Show((player ? "O" : "X") + "贏了!");
                 Reset();
             }
-            else if (oxBtn.All(button => button.Text != "")) 
+            else if (oxBtn.All(oxBtn => oxBtn.Text != ""))
             {
-                MessageBox.Show( "平手!按下確定重新開始", "平局");
+                MessageBox.Show("平手!按下確定重新開始", "平局");
                 Reset();
             }
         }
@@ -123,6 +122,13 @@ namespace Homework_Form
             btnClick(sender, e);
         }
 
-        
+        private void btnReset_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 'r' || e.KeyChar == 'R')
+            {
+                // 執行reset操作
+                Reset();
+            }
+        }
     }
 }

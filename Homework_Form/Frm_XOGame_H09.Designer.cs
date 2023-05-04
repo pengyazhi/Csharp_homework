@@ -1,4 +1,6 @@
-﻿namespace Homework_Form
+﻿using System.Windows.Forms;
+
+namespace Homework_Form
 {
     partial class Frm_XOGame_H09
     {
@@ -171,6 +173,7 @@
             this.btnReset.Text = "Reset(R)";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.btnReset.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnReset_KeyPress);
             // 
             // btnExist
             // 
@@ -203,6 +206,7 @@
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.labXOGame);
             this.KeyPreview = true;
+            this.KeyPress += new KeyPressEventHandler(btnReset_KeyPress);
             this.Name = "Frm_XOGame_H09";
             this.Text = "Frm_XOGame_H09";
             this.ResumeLayout(false);
