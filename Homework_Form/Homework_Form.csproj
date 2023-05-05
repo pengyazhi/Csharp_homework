@@ -70,6 +70,18 @@
     <Compile Include="Frm_H08_ForDoWhileMethod.Designer.cs">
       <DependentUpon>Frm_H08_ForDoWhileMethod.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Notepad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Notepad.Designer.cs">
+      <DependentUpon>Frm_Notepad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Panting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Panting.Designer.cs">
+      <DependentUpon>Frm_Panting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_ScreenSaver.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +156,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_H08_ForDoWhileMethod.resx">
       <DependentUpon>Frm_H08_ForDoWhileMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Notepad.resx">
+      <DependentUpon>Frm_Notepad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Panting.resx">
+      <DependentUpon>Frm_Panting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_ScreenSaver.resx">
       <DependentUpon>Frm_ScreenSaver.cs</DependentUpon>

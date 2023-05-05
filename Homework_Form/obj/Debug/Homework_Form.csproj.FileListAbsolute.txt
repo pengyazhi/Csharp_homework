@@ -104,3 +104,5 @@ C:\Users\User\source\repos\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Homewor
 C:\Users\User\source\repos\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Homework_Form.Frm_Guess_Test.resources
 C:\Users\User\source\repos\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Homework_Form.Frm_XOGame_H09.resources
 C:\Users\User\source\repos\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Homework_Form.Frm_ScreenSaver.resources
+C:\Users\User\source\repos\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Homework_Form.Frm_Panting.resources
+C:\Users\User\source\repos\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Homework_Form.Frm_Notepad.resources
