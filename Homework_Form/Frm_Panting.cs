@@ -12,7 +12,7 @@ namespace Homework_Form
 {
     public partial class Frm_Panting : Form
     {
-        ColorDialog choiceColor = new ColorDialog();
+        ColorDialog chooseColor = new ColorDialog();
         Graphics line;
         int oldX;
         int oldY;
@@ -24,8 +24,8 @@ namespace Homework_Form
        
         private void btnShowColor_Click(object sender, EventArgs e)
         {
-            choiceColor.ShowDialog();
-            panelShowColor.BackColor = choiceColor.Color ;
+            chooseColor.ShowDialog();
+            panelShowColor.BackColor = chooseColor.Color ;
         }
 
         private void trackBarPePixel_Scroll(object sender, EventArgs e)
@@ -49,7 +49,7 @@ namespace Homework_Form
             if(isDrawing)
             {
                 Pen pen = new Pen(Color.Black, trackBarPePixel.Value);
-                pen.Color = choiceColor.Color;
+                pen.Color = chooseColor.Color;
                 line.DrawLine(pen, oldX, oldY, e.X , e.Y );
                 oldX = e.X;
                 oldY = e.Y;

@@ -27,8 +27,6 @@ namespace Homework_Form
 			}
 			childForm = (Form)Activator.CreateInstance(p_Form);
 			childForm.TopLevel = false;
-            
-
             splitContainer2.Panel2.Controls.Add(childForm);
 			childForm.Show();
 		}
@@ -79,6 +77,34 @@ namespace Homework_Form
             
         }
 
-        
+        private void btnMethod_Click(object sender, EventArgs e)
+        {
+            Type childFormType = typeof(Frm_H08_ForDoWhileMethod);
+            CreateChildForm(childFormType);
+        }
+
+        private void btnOXGame_Click(object sender, EventArgs e)
+        {
+            Type childFormType = typeof(Frm_XOGame_H09);
+            CreateChildForm(childFormType);
+        }
+
+        private void btnScreenSaver_Click(object sender, EventArgs e)
+        {
+            Frm_ScreenSaver frm = new Frm_ScreenSaver();
+            frm.Show();
+        }
+
+        private void btnPictureViewer_Click(object sender, EventArgs e)
+        {
+            Type childFormType = typeof(Frm_PictureViewer);
+            CreateChildForm(childFormType);
+        }
+
+        private void btnGuess_Click(object sender, EventArgs e)
+        {
+            Type childFormType = typeof(Frm_Guess_Test);
+            CreateChildForm(childFormType);
+        }
     }
 }

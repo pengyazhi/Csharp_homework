@@ -82,11 +82,23 @@
     <Compile Include="Frm_Panting.Designer.cs">
       <DependentUpon>Frm_Panting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_PictureViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PictureViewer.Designer.cs">
+      <DependentUpon>Frm_PictureViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_ScreenSaver.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_ScreenSaver.Designer.cs">
       <DependentUpon>Frm_ScreenSaver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ShowPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ShowPicture.Designer.cs">
+      <DependentUpon>Frm_ShowPicture.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_StudentGradesList_06.cs">
       <SubType>Form</SubType>
@@ -162,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Panting.resx">
       <DependentUpon>Frm_Panting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_PictureViewer.resx">
+      <DependentUpon>Frm_PictureViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_ScreenSaver.resx">
       <DependentUpon>Frm_ScreenSaver.cs</DependentUpon>
