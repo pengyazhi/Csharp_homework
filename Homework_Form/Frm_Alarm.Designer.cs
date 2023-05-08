@@ -32,9 +32,11 @@
             this.timeNow = new System.Windows.Forms.Timer(this.components);
             this.labShowTime = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labCheckAlarmSet = new System.Windows.Forms.Label();
             this.checkBoxSetTime = new System.Windows.Forms.CheckBox();
             this.maskedTxtBoxSetTime = new System.Windows.Forms.MaskedTextBox();
             this.labSetTime = new System.Windows.Forms.Label();
+            this.timer_ItsTime = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +57,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.labCheckAlarmSet);
             this.groupBox1.Controls.Add(this.checkBoxSetTime);
             this.groupBox1.Controls.Add(this.maskedTxtBoxSetTime);
             this.groupBox1.Controls.Add(this.labSetTime);
@@ -65,6 +68,15 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Select Time";
+            // 
+            // labCheckAlarmSet
+            // 
+            this.labCheckAlarmSet.AutoSize = true;
+            this.labCheckAlarmSet.Location = new System.Drawing.Point(199, 60);
+            this.labCheckAlarmSet.Name = "labCheckAlarmSet";
+            this.labCheckAlarmSet.Size = new System.Drawing.Size(109, 23);
+            this.labCheckAlarmSet.TabIndex = 3;
+            this.labCheckAlarmSet.Text = "Alarm Time";
             // 
             // checkBoxSetTime
             // 
@@ -81,10 +93,12 @@
             // 
             this.maskedTxtBoxSetTime.BeepOnError = true;
             this.maskedTxtBoxSetTime.Location = new System.Drawing.Point(187, 101);
-            this.maskedTxtBoxSetTime.Mask = "90時90分90秒";
+            this.maskedTxtBoxSetTime.Mask = "00時00分00秒";
             this.maskedTxtBoxSetTime.Name = "maskedTxtBoxSetTime";
+            this.maskedTxtBoxSetTime.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.maskedTxtBoxSetTime.Size = new System.Drawing.Size(142, 32);
             this.maskedTxtBoxSetTime.TabIndex = 1;
+            this.maskedTxtBoxSetTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.maskedTxtBoxSetTime.ValidatingType = typeof(System.DateTime);
             // 
             // labSetTime
@@ -95,6 +109,11 @@
             this.labSetTime.Size = new System.Drawing.Size(115, 23);
             this.labSetTime.TabIndex = 0;
             this.labSetTime.Text = "Alarm Time:";
+            // 
+            // timer_ItsTime
+            // 
+            this.timer_ItsTime.Interval = 1000;
+            this.timer_ItsTime.Tick += new System.EventHandler(this.timer_ItsTime_Tick);
             // 
             // Frm_Alarm
             // 
@@ -121,5 +140,7 @@
         private System.Windows.Forms.MaskedTextBox maskedTxtBoxSetTime;
         private System.Windows.Forms.Label labSetTime;
         private System.Windows.Forms.CheckBox checkBoxSetTime;
+        private System.Windows.Forms.Label labCheckAlarmSet;
+        private System.Windows.Forms.Timer timer_ItsTime;
     }
 }
