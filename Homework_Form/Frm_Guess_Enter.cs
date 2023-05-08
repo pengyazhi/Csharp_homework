@@ -13,7 +13,7 @@ namespace Homework_Form
 {
     public partial class Frm_Guess_Enter : Form
     {
-        private readonly Frm_Guess_Test frm1;
+        private Frm_Guess_Test frm1;
         public Frm_Guess_Enter(Frm_Guess_Test frm)
         {
             InitializeComponent();
@@ -53,6 +53,11 @@ namespace Homework_Form
             {
                 MessageBox.Show("請輸入1~100的數字");
             }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

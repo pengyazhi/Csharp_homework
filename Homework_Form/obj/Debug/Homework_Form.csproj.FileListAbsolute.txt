@@ -113,3 +113,5 @@ C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homew
 C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_ScreenSaver.resources
 C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_XOGame_H09.resources
 C:\Users\王恩詠\Desktop\芝\Csharp_homework_new\Homework_Form\obj\Debug\Homework_Form.Frm_PictureViewer.resources
+C:\Users\User\source\repos\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Homework_Form.Frm_PictureViewer.resources
+C:\Users\User\source\repos\CSharp_homeworkGitHub\Homework_Form\obj\Debug\Homework_Form.Frm_Alarm.resources

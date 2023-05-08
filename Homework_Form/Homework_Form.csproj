@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_Alarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Alarm.Designer.cs">
+      <DependentUpon>Frm_Alarm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Calculator_H07.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility.cs" />
+    <EmbeddedResource Include="Frm_Alarm.resx">
+      <DependentUpon>Frm_Alarm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Calculator_H07.resx">
       <DependentUpon>Frm_Calculator_H07.cs</DependentUpon>
     </EmbeddedResource>
