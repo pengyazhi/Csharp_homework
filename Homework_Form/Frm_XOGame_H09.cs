@@ -19,7 +19,10 @@ namespace Homework_Form
             InitializeComponent();
             oxBtn = new Button[] { btn0 , btn1, btn2 , btn3 , btn4 , btn5 , btn6 , btn7, btn8 };
         }
-        
+        private void btnExist_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
         public bool player = true; //player1:true player2:false
         public void btnClick(object sender, EventArgs e)
         {
@@ -72,10 +75,7 @@ namespace Homework_Form
             Reset();
         }
 
-        private void btnExist_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        
 
         private void btn0_Click(object sender, EventArgs e)
         {

@@ -165,6 +165,7 @@ namespace Homework_Form
             // 
             // btnReset
             // 
+            this.btnReset.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnReset.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnReset.Location = new System.Drawing.Point(137, 366);
             this.btnReset.Name = "btnReset";
@@ -206,9 +207,9 @@ namespace Homework_Form
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.labXOGame);
             this.KeyPreview = true;
-            this.KeyPress += new KeyPressEventHandler(btnReset_KeyPress);
             this.Name = "Frm_XOGame_H09";
             this.Text = "Frm_XOGame_H09";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnReset_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 

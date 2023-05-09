@@ -90,6 +90,7 @@
             this.Controls.Add(this.btnShowColor);
             this.Cursor = System.Windows.Forms.Cursors.Cross;
             this.Name = "Frm_Panting";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Frm_Panting";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Frm_Panting_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Frm_Panting_MouseMove);

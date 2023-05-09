@@ -12,16 +12,16 @@ namespace Homework_Form
 {
     public partial class Frm_Panting : Form
     {
-        ColorDialog chooseColor = new ColorDialog();
-        Graphics line;
-        int oldX;
-        int oldY;
+        
         public Frm_Panting()
         {
             InitializeComponent();
             line = CreateGraphics();
         }
-       
+       ColorDialog chooseColor = new ColorDialog();
+        Graphics line;
+        int oldX;
+        int oldY;
         private void btnShowColor_Click(object sender, EventArgs e)
         {
             chooseColor.ShowDialog();

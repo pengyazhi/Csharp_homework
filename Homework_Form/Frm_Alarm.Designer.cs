@@ -72,16 +72,18 @@
             // labCheckAlarmSet
             // 
             this.labCheckAlarmSet.AutoSize = true;
+            this.labCheckAlarmSet.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labCheckAlarmSet.Location = new System.Drawing.Point(199, 60);
             this.labCheckAlarmSet.Name = "labCheckAlarmSet";
             this.labCheckAlarmSet.Size = new System.Drawing.Size(109, 23);
             this.labCheckAlarmSet.TabIndex = 3;
             this.labCheckAlarmSet.Text = "Alarm Time";
+            this.labCheckAlarmSet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // checkBoxSetTime
             // 
             this.checkBoxSetTime.AutoSize = true;
-            this.checkBoxSetTime.Location = new System.Drawing.Point(142, 157);
+            this.checkBoxSetTime.Location = new System.Drawing.Point(203, 158);
             this.checkBoxSetTime.Name = "checkBoxSetTime";
             this.checkBoxSetTime.Size = new System.Drawing.Size(111, 27);
             this.checkBoxSetTime.TabIndex = 2;

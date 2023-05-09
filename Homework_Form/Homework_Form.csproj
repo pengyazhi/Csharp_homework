@@ -70,11 +70,11 @@
     <Compile Include="Frm_Guess_Test.Designer.cs">
       <DependentUpon>Frm_Guess_Test.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_H08_ForDoWhileMethod.cs">
+    <Compile Include="Frm_ForDoWhileMethod_H08.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_H08_ForDoWhileMethod.Designer.cs">
-      <DependentUpon>Frm_H08_ForDoWhileMethod.cs</DependentUpon>
+    <Compile Include="Frm_ForDoWhileMethod_H08.Designer.cs">
+      <DependentUpon>Frm_ForDoWhileMethod_H08.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Notepad.cs">
       <SubType>Form</SubType>
@@ -175,8 +175,8 @@
     <EmbeddedResource Include="Frm_Guess_Test.resx">
       <DependentUpon>Frm_Guess_Test.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_H08_ForDoWhileMethod.resx">
-      <DependentUpon>Frm_H08_ForDoWhileMethod.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_ForDoWhileMethod_H08.resx">
+      <DependentUpon>Frm_ForDoWhileMethod_H08.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Notepad.resx">
       <DependentUpon>Frm_Notepad.cs</DependentUpon>

@@ -31,6 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_HomePage_H00));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.btnNotePad = new System.Windows.Forms.Button();
+            this.btnAlarm = new System.Windows.Forms.Button();
+            this.btnGuess = new System.Windows.Forms.Button();
+            this.btnPictureViewer = new System.Windows.Forms.Button();
+            this.btnScreenSaver = new System.Windows.Forms.Button();
+            this.btnOXGame = new System.Windows.Forms.Button();
+            this.btnMethod = new System.Windows.Forms.Button();
             this.btnCalculator = new System.Windows.Forms.Button();
             this.btnOpneHelloForm = new System.Windows.Forms.Button();
             this.btnStudentStrucrForm = new System.Windows.Forms.Button();
@@ -38,11 +45,7 @@
             this.btnPOS = new System.Windows.Forms.Button();
             this.btnLoan = new System.Windows.Forms.Button();
             this.btnStudentGrade = new System.Windows.Forms.Button();
-            this.btnMethod = new System.Windows.Forms.Button();
-            this.btnOXGame = new System.Windows.Forms.Button();
-            this.btnScreenSaver = new System.Windows.Forms.Button();
-            this.btnPictureViewer = new System.Windows.Forms.Button();
-            this.btnGuess = new System.Windows.Forms.Button();
+            this.btnPanting = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -86,6 +89,9 @@
             this.splitContainer2.Panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.splitContainer2.Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("splitContainer2.Panel1.BackgroundImage")));
             this.splitContainer2.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.splitContainer2.Panel1.Controls.Add(this.btnPanting);
+            this.splitContainer2.Panel1.Controls.Add(this.btnNotePad);
+            this.splitContainer2.Panel1.Controls.Add(this.btnAlarm);
             this.splitContainer2.Panel1.Controls.Add(this.btnGuess);
             this.splitContainer2.Panel1.Controls.Add(this.btnPictureViewer);
             this.splitContainer2.Panel1.Controls.Add(this.btnScreenSaver);
@@ -110,6 +116,146 @@
             this.splitContainer2.SplitterDistance = 345;
             this.splitContainer2.SplitterWidth = 6;
             this.splitContainer2.TabIndex = 0;
+            // 
+            // btnNotePad
+            // 
+            this.btnNotePad.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNotePad.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnNotePad.BackColor = System.Drawing.Color.IndianRed;
+            this.btnNotePad.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNotePad.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnNotePad.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNotePad.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNotePad.ForeColor = System.Drawing.Color.Salmon;
+            this.btnNotePad.Location = new System.Drawing.Point(32, 521);
+            this.btnNotePad.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNotePad.Name = "btnNotePad";
+            this.btnNotePad.Size = new System.Drawing.Size(280, 38);
+            this.btnNotePad.TabIndex = 13;
+            this.btnNotePad.Text = "NotePad";
+            this.btnNotePad.UseVisualStyleBackColor = false;
+            this.btnNotePad.Click += new System.EventHandler(this.btnNotePad_Click);
+            // 
+            // btnAlarm
+            // 
+            this.btnAlarm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAlarm.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAlarm.BackColor = System.Drawing.Color.IndianRed;
+            this.btnAlarm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAlarm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnAlarm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAlarm.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlarm.ForeColor = System.Drawing.Color.Salmon;
+            this.btnAlarm.Location = new System.Drawing.Point(32, 659);
+            this.btnAlarm.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAlarm.Name = "btnAlarm";
+            this.btnAlarm.Size = new System.Drawing.Size(280, 38);
+            this.btnAlarm.TabIndex = 12;
+            this.btnAlarm.Text = "Alarm";
+            this.btnAlarm.UseVisualStyleBackColor = false;
+            this.btnAlarm.Click += new System.EventHandler(this.btnAlarm_Click);
+            // 
+            // btnGuess
+            // 
+            this.btnGuess.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGuess.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnGuess.BackColor = System.Drawing.Color.IndianRed;
+            this.btnGuess.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuess.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnGuess.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGuess.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuess.ForeColor = System.Drawing.Color.Salmon;
+            this.btnGuess.Location = new System.Drawing.Point(32, 613);
+            this.btnGuess.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuess.Name = "btnGuess";
+            this.btnGuess.Size = new System.Drawing.Size(280, 38);
+            this.btnGuess.TabIndex = 11;
+            this.btnGuess.Text = "Guess";
+            this.btnGuess.UseVisualStyleBackColor = false;
+            this.btnGuess.Click += new System.EventHandler(this.btnGuess_Click);
+            // 
+            // btnPictureViewer
+            // 
+            this.btnPictureViewer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPictureViewer.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPictureViewer.BackColor = System.Drawing.Color.IndianRed;
+            this.btnPictureViewer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPictureViewer.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnPictureViewer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPictureViewer.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPictureViewer.ForeColor = System.Drawing.Color.Salmon;
+            this.btnPictureViewer.Location = new System.Drawing.Point(32, 567);
+            this.btnPictureViewer.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPictureViewer.Name = "btnPictureViewer";
+            this.btnPictureViewer.Size = new System.Drawing.Size(280, 38);
+            this.btnPictureViewer.TabIndex = 10;
+            this.btnPictureViewer.Text = "Picture Viewer";
+            this.btnPictureViewer.UseVisualStyleBackColor = false;
+            this.btnPictureViewer.Click += new System.EventHandler(this.btnPictureViewer_Click);
+            // 
+            // btnScreenSaver
+            // 
+            this.btnScreenSaver.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnScreenSaver.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnScreenSaver.BackColor = System.Drawing.Color.IndianRed;
+            this.btnScreenSaver.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnScreenSaver.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnScreenSaver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnScreenSaver.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnScreenSaver.ForeColor = System.Drawing.Color.Salmon;
+            this.btnScreenSaver.Location = new System.Drawing.Point(32, 429);
+            this.btnScreenSaver.Margin = new System.Windows.Forms.Padding(4);
+            this.btnScreenSaver.Name = "btnScreenSaver";
+            this.btnScreenSaver.Size = new System.Drawing.Size(280, 38);
+            this.btnScreenSaver.TabIndex = 9;
+            this.btnScreenSaver.Text = "ScreenSaver";
+            this.btnScreenSaver.UseVisualStyleBackColor = false;
+            this.btnScreenSaver.Click += new System.EventHandler(this.btnScreenSaver_Click);
+            // 
+            // btnOXGame
+            // 
+            this.btnOXGame.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOXGame.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnOXGame.BackColor = System.Drawing.Color.IndianRed;
+            this.btnOXGame.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOXGame.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnOXGame.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnOXGame.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOXGame.ForeColor = System.Drawing.Color.Salmon;
+            this.btnOXGame.Location = new System.Drawing.Point(32, 383);
+            this.btnOXGame.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOXGame.Name = "btnOXGame";
+            this.btnOXGame.Size = new System.Drawing.Size(280, 38);
+            this.btnOXGame.TabIndex = 8;
+            this.btnOXGame.Text = "XOGame";
+            this.btnOXGame.UseVisualStyleBackColor = false;
+            this.btnOXGame.Click += new System.EventHandler(this.btnOXGame_Click);
+            // 
+            // btnMethod
+            // 
+            this.btnMethod.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMethod.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnMethod.BackColor = System.Drawing.Color.IndianRed;
+            this.btnMethod.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMethod.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnMethod.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMethod.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMethod.ForeColor = System.Drawing.Color.Salmon;
+            this.btnMethod.Location = new System.Drawing.Point(32, 337);
+            this.btnMethod.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMethod.Name = "btnMethod";
+            this.btnMethod.Size = new System.Drawing.Size(280, 38);
+            this.btnMethod.TabIndex = 7;
+            this.btnMethod.Text = "For Do While Method";
+            this.btnMethod.UseVisualStyleBackColor = false;
+            this.btnMethod.Click += new System.EventHandler(this.btnMethod_Click);
             // 
             // btnCalculator
             // 
@@ -251,105 +397,25 @@
             this.btnStudentGrade.UseVisualStyleBackColor = false;
             this.btnStudentGrade.Click += new System.EventHandler(this.btnStudentGrade_Click);
             // 
-            // btnMethod
+            // btnPanting
             // 
-            this.btnMethod.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnPanting.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMethod.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnMethod.BackColor = System.Drawing.Color.IndianRed;
-            this.btnMethod.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMethod.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnMethod.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnMethod.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMethod.ForeColor = System.Drawing.Color.Salmon;
-            this.btnMethod.Location = new System.Drawing.Point(32, 337);
-            this.btnMethod.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMethod.Name = "btnMethod";
-            this.btnMethod.Size = new System.Drawing.Size(280, 38);
-            this.btnMethod.TabIndex = 7;
-            this.btnMethod.Text = "For Do While Method";
-            this.btnMethod.UseVisualStyleBackColor = false;
-            this.btnMethod.Click += new System.EventHandler(this.btnMethod_Click);
-            // 
-            // btnOXGame
-            // 
-            this.btnOXGame.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOXGame.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnOXGame.BackColor = System.Drawing.Color.IndianRed;
-            this.btnOXGame.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOXGame.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnOXGame.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnOXGame.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOXGame.ForeColor = System.Drawing.Color.Salmon;
-            this.btnOXGame.Location = new System.Drawing.Point(32, 383);
-            this.btnOXGame.Margin = new System.Windows.Forms.Padding(4);
-            this.btnOXGame.Name = "btnOXGame";
-            this.btnOXGame.Size = new System.Drawing.Size(280, 38);
-            this.btnOXGame.TabIndex = 8;
-            this.btnOXGame.Text = "XOGame";
-            this.btnOXGame.UseVisualStyleBackColor = false;
-            this.btnOXGame.Click += new System.EventHandler(this.btnOXGame_Click);
-            // 
-            // btnScreenSaver
-            // 
-            this.btnScreenSaver.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnScreenSaver.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnScreenSaver.BackColor = System.Drawing.Color.IndianRed;
-            this.btnScreenSaver.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnScreenSaver.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnScreenSaver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnScreenSaver.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnScreenSaver.ForeColor = System.Drawing.Color.Salmon;
-            this.btnScreenSaver.Location = new System.Drawing.Point(32, 429);
-            this.btnScreenSaver.Margin = new System.Windows.Forms.Padding(4);
-            this.btnScreenSaver.Name = "btnScreenSaver";
-            this.btnScreenSaver.Size = new System.Drawing.Size(280, 38);
-            this.btnScreenSaver.TabIndex = 9;
-            this.btnScreenSaver.Text = "ScreenSaver";
-            this.btnScreenSaver.UseVisualStyleBackColor = false;
-            this.btnScreenSaver.Click += new System.EventHandler(this.btnScreenSaver_Click);
-            // 
-            // btnPictureViewer
-            // 
-            this.btnPictureViewer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPictureViewer.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnPictureViewer.BackColor = System.Drawing.Color.IndianRed;
-            this.btnPictureViewer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPictureViewer.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnPictureViewer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPictureViewer.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPictureViewer.ForeColor = System.Drawing.Color.Salmon;
-            this.btnPictureViewer.Location = new System.Drawing.Point(32, 475);
-            this.btnPictureViewer.Margin = new System.Windows.Forms.Padding(4);
-            this.btnPictureViewer.Name = "btnPictureViewer";
-            this.btnPictureViewer.Size = new System.Drawing.Size(280, 38);
-            this.btnPictureViewer.TabIndex = 10;
-            this.btnPictureViewer.Text = "Picture Viewer";
-            this.btnPictureViewer.UseVisualStyleBackColor = false;
-            this.btnPictureViewer.Click += new System.EventHandler(this.btnPictureViewer_Click);
-            // 
-            // btnGuess
-            // 
-            this.btnGuess.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGuess.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnGuess.BackColor = System.Drawing.Color.IndianRed;
-            this.btnGuess.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuess.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnGuess.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGuess.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuess.ForeColor = System.Drawing.Color.Salmon;
-            this.btnGuess.Location = new System.Drawing.Point(32, 521);
-            this.btnGuess.Margin = new System.Windows.Forms.Padding(4);
-            this.btnGuess.Name = "btnGuess";
-            this.btnGuess.Size = new System.Drawing.Size(280, 38);
-            this.btnGuess.TabIndex = 11;
-            this.btnGuess.Text = "Guess";
-            this.btnGuess.UseVisualStyleBackColor = false;
-            this.btnGuess.Click += new System.EventHandler(this.btnGuess_Click);
+            this.btnPanting.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPanting.BackColor = System.Drawing.Color.IndianRed;
+            this.btnPanting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPanting.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnPanting.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPanting.Font = new System.Drawing.Font("Segoe Print", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPanting.ForeColor = System.Drawing.Color.Salmon;
+            this.btnPanting.Location = new System.Drawing.Point(32, 475);
+            this.btnPanting.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPanting.Name = "btnPanting";
+            this.btnPanting.Size = new System.Drawing.Size(280, 38);
+            this.btnPanting.TabIndex = 14;
+            this.btnPanting.Text = "Panting";
+            this.btnPanting.UseVisualStyleBackColor = false;
+            this.btnPanting.Click += new System.EventHandler(this.btnPanting_Click);
             // 
             // Frm_HomePage_H00
             // 
@@ -386,6 +452,9 @@
         private System.Windows.Forms.Button btnScreenSaver;
         private System.Windows.Forms.Button btnOXGame;
         private System.Windows.Forms.Button btnMethod;
+        private System.Windows.Forms.Button btnAlarm;
+        private System.Windows.Forms.Button btnNotePad;
+        private System.Windows.Forms.Button btnPanting;
     }
 }
 

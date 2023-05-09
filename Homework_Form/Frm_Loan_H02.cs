@@ -30,10 +30,10 @@ namespace Homework_Form
         public static int Total;//總還款額
         private void btnPMT_Click(object sender, EventArgs e)
         {
-            if (Utility.IsNumber(txtLoan.Text) && Utility.IsNumber(txtYear.Text) && Utility.IsNumber(txtInterestRate.Text)
-                && Utility.IsNumber(txtDdownPayment.Text))
+            if (int.TryParse(txtLoan.Text,out int Loan) && int.TryParse(txtYear.Text,out int Year) && int.TryParse(txtInterestRate.Text,out int InterestRate)
+                && int.TryParse(txtDownPayment.Text,out int DownPayment))
             {
-                if(Convert.ToInt32(txtLoan.Text) > 0 && Convert.ToInt32(txtYear.Text) > 0 && Convert.ToInt32(txtInterestRate.Text) > 0 && Convert.ToInt32(txtDdownPayment.Text) >= 0)
+                if(Loan > 0 && Year > 0 && InterestRate > 0 && DownPayment >= 0)
                 {
                     Caculate();
                     MessageBox.Show($"每月應付本息為{Convert.ToInt32(PrincipalPlusInterest)}元。");
@@ -52,10 +52,10 @@ namespace Homework_Form
         }
         private void btnTotal_Click(object sender, EventArgs e)
         {
-            if (Utility.IsNumber(txtLoan.Text) && Utility.IsNumber(txtYear.Text) && Utility.IsNumber(txtInterestRate.Text)
-                && Utility.IsNumber(txtDdownPayment.Text))
+            if (int.TryParse(txtLoan.Text, out int Loan) && int.TryParse(txtYear.Text, out int Year) && int.TryParse(txtInterestRate.Text, out int InterestRate)
+                && int.TryParse(txtDownPayment.Text, out int DownPayment))
             {
-                if (Convert.ToInt32(txtLoan.Text) > 0 && Convert.ToInt32(txtYear.Text) > 0 && Convert.ToInt32(txtInterestRate.Text) > 0 && Convert.ToInt32(txtDdownPayment.Text) >= 0)
+                if (Loan > 0 && Year > 0 && InterestRate > 0 && DownPayment >= 0)
                 {
                     Caculate();
                     MessageBox.Show($"總付額為{Total}元。");
@@ -79,11 +79,11 @@ namespace Homework_Form
             NumOfMonth = Convert.ToInt32(txtYear.Text) * 12; //還款月數 = 還款年*12
             LoanYearRate = Convert.ToInt32(txtInterestRate.Text);
             MonthlyInterestRate = Convert.ToDouble(txtInterestRate.Text) / 1200; //月利率=年利率/12
-            DownPayment = Convert.ToInt32(txtDdownPayment.Text); //頭期款
-                                                                 //每月應付本息金額之平均攤還率:{[(1＋月利率)^月數]×月利率}÷{[(1＋月利率)^月數]－1}
+            DownPayment = Convert.ToInt32(txtDownPayment.Text); //頭期款
+            //每月應付本息金額之平均攤還率:{[(1＋月利率)^月數]×月利率}÷{[(1＋月利率)^月數]－1}
             MonthRate = Math.Pow(1 + MonthlyInterestRate, NumOfMonth);//(1＋月利率)**月數 
             EachMonRate = MonthRate * MonthlyInterestRate / (MonthRate - 1); //每月應付本息金額之平均攤還率
-                                                                             //平均每月應攤付本息金額＝貸款本金×每月應付本息金額之平均攤還率＝每月應還本金金額＋每 月應付利息金額
+           //平均每月應攤付本息金額＝貸款本金×每月應付本息金額之平均攤還率＝每月應還本金金額＋每 月應付利息金額
             PrincipalPlusInterest = Convert.ToInt32((Loan - DownPayment)) * Convert.ToDecimal(EachMonRate);
             Total = Convert.ToInt32(PrincipalPlusInterest) * NumOfMonth;
 
@@ -110,9 +110,9 @@ namespace Homework_Form
         private void btnReport_Click(object sender, EventArgs e)
         {
             if (Utility.IsNumber(txtLoan.Text) && Utility.IsNumber(txtYear.Text) && Utility.IsNumber(txtInterestRate.Text)
-                && Utility.IsNumber(txtDdownPayment.Text))
+                && Utility.IsNumber(txtDownPayment.Text))
             {
-                if (Convert.ToInt32(txtLoan.Text) > 0 && Convert.ToInt32(txtYear.Text) > 0 && Convert.ToInt32(txtInterestRate.Text) > 0 && Convert.ToInt32(txtDdownPayment.Text) >= 0)
+                if (Convert.ToInt32(txtLoan.Text) > 0 && Convert.ToInt32(txtYear.Text) > 0 && Convert.ToInt32(txtInterestRate.Text) > 0 && Convert.ToInt32(txtDownPayment.Text) >= 0)
                 {
                     Caculate();
                     Frm_Loan_Report_H02 frm = new Frm_Loan_Report_H02();
